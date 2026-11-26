@@ -2,7 +2,8 @@
 Upload the next SQL reel to YouTube as a Short.
 
 Videos:   Cloudinary video/upload/insta/reel/SQLxxx.mp4, ONE copy shared with the Instagram
-          loop (test_in_up). A video is deleted only once it is on both Instagram and YouTube.
+          loop (test_in_up). Cover: insta/thumbnails/SQLxxx.jpg (set as the YouTube thumbnail).
+          Both are deleted only once the reel is on both Instagram and YouTube.
 Text:     yt_videos.csv (title, long description, tags; built by yt_meta.py from the test_in_up data).
 Progress: yt_posted.csv (id, video_id, posted_at). Posted ids are never uploaded again.
 
@@ -159,6 +160,21 @@ def upload(token, path, meta):
     sys.exit("YouTube upload failed")
 
 
+def set_thumbnail(token, vid, media, pid):
+    """Custom cover from Cloudinary insta/thumbnails/<id>.jpg (shared with Instagram). Never fails the upload."""
+    try:
+        img = requests.get(f"{media}/image/upload/insta/thumbnails/{pid}.jpg", timeout=60)
+        if not img.ok:
+            print(f"No thumbnail on Cloudinary for {pid} ({img.status_code}): YouTube picks a frame")
+            return
+        r = requests.post("https://www.googleapis.com/upload/youtube/v3/thumbnails/set",
+                          params={"videoId": vid, "uploadType": "media"}, data=img.content, timeout=120,
+                          headers={"Authorization": f"Bearer {token}", "Content-Type": "image/jpeg"})
+        print(f"Thumbnail: {'set' if r.ok else f'failed ({r.status_code}) {r.text[:200]}'}")
+    except requests.RequestException as e:
+        print(f"Thumbnail failed: {e}")
+
+
 IG_POSTED_URL = "https://raw.githubusercontent.com/yavnish3/test_in_up/main/scheduler/posted.csv"
 
 
@@ -175,21 +191,23 @@ def posted_on_both():
 
 
 def delete_from_cloudinary(media):
-    """insta/reel/<id>.mp4 is shared with the Instagram loop: delete only videos posted on both."""
+    """insta/reel/<id>.mp4 and insta/thumbnails/<id>.jpg are shared with the Instagram loop:
+    delete them only once the reel is posted on both."""
     key, secret = os.environ.get("CLOUDINARY_API_KEY"), os.environ.get("CLOUDINARY_API_SECRET")
     ids = posted_on_both()
     if not (key and secret and ids):
         print("Nothing to delete from Cloudinary (not posted on Instagram yet, or keys missing)")
         return
     cloud = media.rstrip("/").rsplit("/", 1)[-1]
-    try:
-        resp = requests.delete(f"https://api.cloudinary.com/v1_1/{cloud}/resources/video/upload",
-                               params=[("public_ids[]", f"insta/reel/{i}") for i in ids],
-                               auth=(key, secret), timeout=60)
-        gone = [i for i, v in resp.json().get("deleted", {}).items() if v == "deleted"]
-        print(f"Deleted from Cloudinary (posted on both): {gone}")
-    except Exception as e:  # noqa: BLE001 - never fail an upload over cleanup
-        print(f"Warning: could not delete from Cloudinary: {e}")
+    for rtype, folder in (("video", "insta/reel"), ("image", "insta/thumbnails")):
+        try:
+            resp = requests.delete(f"https://api.cloudinary.com/v1_1/{cloud}/resources/{rtype}/upload",
+                                   params=[("public_ids[]", f"{folder}/{i}") for i in ids],
+                                   auth=(key, secret), timeout=60)
+            gone = [i for i, v in resp.json().get("deleted", {}).items() if v == "deleted"]
+            print(f"Deleted from Cloudinary (posted on both): {gone}")
+        except Exception as e:  # noqa: BLE001 - never fail an upload over cleanup
+            print(f"Warning: could not delete from Cloudinary ({folder}): {e}")
 
 
 def main():
@@ -219,6 +237,7 @@ def main():
         video = upload(token, path, meta)
     vid = video["id"]
     mark_posted(pid, vid)
+    set_thumbnail(token, vid, media, pid)
     print(f"Uploaded {pid}: https://youtube.com/shorts/{vid}  "
           f"(privacy: {video.get('status', {}).get('privacyStatus')}, "
           f"upload: {video.get('status', {}).get('uploadStatus')})")
