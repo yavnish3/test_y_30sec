@@ -1,12 +1,4 @@
-"""
-YouTube title / description / tags for one reel, built from the test_in_up data:
-  scheduler/sql_reel_posts.csv   (hook title, caption, hashtags)
-  generator/content/SQLxxx.json  (recap points, example query, common mistake, next topic)
-
-    python build_yt_csv.py   # (re)build yt_videos.csv for every reel
-yt_videos.csv can be edited by hand; upload_next.py uses it as is and only builds rows
-that are missing (new reels).
-"""
+"""Video text."""
 
 import csv
 import io
@@ -17,11 +9,9 @@ import requests
 RAW = "https://raw.githubusercontent.com/yavnish3/test_in_up/main"
 FIELDS = ["id", "title", "description", "tags"]
 
-# Description: YouTube ignores ALL hashtags if a video has more than 15.
 BASE_HASHTAGS = ["#shorts", "#sql", "#sqlinhindi", "#learnsql", "#sqltutorial", "#sqlforbeginners",
                  "#sqlinterview", "#dataanalyst", "#mysql", "#postgresql", "#database", "#coding", "#programming"]
 MAX_HASHTAGS = 15
-# Hidden tags field: up to 500 characters in total.
 BASE_TAGS = ["sql", "sql in hindi", "learn sql", "sql tutorial", "sql tutorial in hindi", "sql for beginners",
              "sql interview questions", "sql interview questions and answers", "sql queries", "sql query",
              "mysql", "postgresql", "sql server", "database", "dbms", "rdbms", "data analyst",
@@ -50,7 +40,7 @@ def fetch_content(pid):
 def hook_of(row, content):
     title = row.get("title", "")
     hook = title.split("|", 1)[1].strip() if "|" in title else ""
-    if not hook or hook.lower() == row.get("topic", "").lower():  # AI reels: title is just the topic
+    if not hook or hook.lower() == row.get("topic", "").lower():
         hook = (row.get("caption") or "").strip().splitlines()[0] if row.get("caption") else plain(content.get("hook"))
     return plain(hook)
 
@@ -87,7 +77,7 @@ def learn_points(row, content):
 def topic_tags(row, topic):
     t = re.sub(r"[^\w\s()]", " ", topic.lower())
     t = re.sub(r"\s+", " ", t).strip()
-    if t.endswith(("hai", "hain", "chahiye")):  # question topics like "database kya hota hai"
+    if t.endswith(("hai", "hain", "chahiye")):
         return [t, f"{t} sql", f"{t} in hindi"] + [h.lstrip("#") for h in (row.get("hashtags") or "").split() if h.startswith("#")]
     tags = [t, f"{t} in sql", f"sql {t}", f"{t} sql in hindi", f"{t} sql interview question"]
     tags += [h.lstrip("#") for h in (row.get("hashtags") or "").split() if h.startswith("#")]
@@ -102,9 +92,6 @@ def clean_hashtag(h):
 
 
 def build(pid, row, content=None, use_ai=True):
-    """One yt_videos.csv row. The AI writes title / intro / learn points / keywords / hashtags / tags;
-    the example query, mistake and next topic always come from our own data (no AI mistakes there).
-    Falls back to the template text if every AI is unavailable."""
     content = content if content is not None else fetch_content(pid)
     topic = plain(row.get("topic") or content.get("topic") or pid)
     part = int(re.sub(r"\D", "", pid) or 0)
@@ -181,7 +168,7 @@ def build(pid, row, content=None, use_ai=True):
         h = h.lower()
         if h and h not in hashtags:
             hashtags.append(h)
-    lines.append(" ".join(hashtags[:MAX_HASHTAGS]))  # YouTube drops ALL hashtags above 15
+    lines.append(" ".join(hashtags[:MAX_HASHTAGS]))
     desc = "\n".join(lines).replace("<", "‹").replace(">", "›")[:4900]
 
     tags, total = [], 0
@@ -193,7 +180,7 @@ def build(pid, row, content=None, use_ai=True):
             tags.append(t)
             total += cost
     if ai:
-        t = re.sub(r"\s*#\w+", "", plain(ai["title"])).strip()  # no stray hashtags like #11
+        t = re.sub(r"\s*#\w+", "", plain(ai["title"])).strip()
         title = f"{t} #shorts" if len(t) + 8 <= 100 else t[:100]
     else:
         title = make_title(topic, hook, part)

@@ -1,15 +1,4 @@
-"""
-One-time, on your Mac: get the YouTube refresh token.
-
-    python3 test_y_30sec/yt/get_token.py ~/Downloads/client_secret_XXXX.json
-    (or: python3 test_y_30sec/yt/get_token.py CLIENT_ID CLIENT_SECRET)
-
-A browser opens -> pick the Google account that owns the YouTube channel -> Allow.
-(If Google shows "app isn't verified": Advanced -> Go to ... (unsafe). It is your own app.)
-The refresh token is saved to in_up/.env as YT_REFRESH_TOKEN (not printed).
-Copy it from there into the GitHub secret YT_REFRESH_TOKEN.
-Needs an OAuth client of type "Desktop app". With the app "In production" the token does not expire.
-"""
+"""Usage: python3 get_token.py client_secret.json"""
 
 import http.server
 import json

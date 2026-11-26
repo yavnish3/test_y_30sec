@@ -1,13 +1,4 @@
-"""
-Self-restarting YouTube loop: each GitHub Actions run sleeps until the next upload
-slot, uploads one Short with upload_next.py, saves yt_posted.csv and ends; the workflow
-then starts a fresh run of itself. A run that cannot reach a slot within ~5.5 h just
-ends and the next run keeps waiting.
-
-Schedule: one Short every 4 hours, counted from the last upload in yt_posted.csv
-(6 a day; YouTube's free API quota allows about 6 uploads a day).
-UPLOAD_NOW=yes uploads right away (hand-started runs only).
-"""
+"""Upload loop."""
 
 import os
 import subprocess
@@ -68,16 +59,14 @@ def upload_once():
     print(out, flush=True)
     code = proc.returncode
     tail = "\n".join(l for l in out.splitlines() if not l.startswith((' "description"', '  "description"')))[-3000:]
-    with open(os.path.join(HERE, "last_run.log"), "w", encoding="utf-8") as f:  # readable without logging in
+    with open(os.path.join(HERE, "last_run.log"), "w", encoding="utf-8") as f:
         f.write(head + f"exit code: {code}\n\n" + tail + "\n")
     save()
-    if code != 0:  # failed or nothing ready: wait before the next run, never restart in a tight loop
+    if code != 0:
         pause()
 
 
 def pause():
-    """Wait up to 1 h before the next run, but stay inside GitHub's 6 h job limit
-    (if the job is killed by the timeout, the next run is never started)."""
     wait = max(0, min(3600, BUDGET + 15 * 60 - (time.time() - START)))
     print(f"Waiting {wait / 60:.0f} min before the next try", flush=True)
     time.sleep(wait)
@@ -87,7 +76,7 @@ def main():
     if os.environ.get("UPLOAD_NOW") == "yes":
         upload_once()
         return
-    git("pull", "--rebase", check=False)  # latest yt_posted.csv (a hand-started upload may have run)
+    git("pull", "--rebase", check=False)
     now = datetime.now(timezone.utc)
     slot = next_slot(now)
     left = BUDGET - (time.time() - START)
@@ -104,6 +93,6 @@ def main():
 if __name__ == "__main__":
     try:
         main()
-    except Exception as e:  # noqa: BLE001 - any crash: pause, so the restart is never a tight loop
+    except Exception as e:
         print(f"loop_runner error: {type(e).__name__}: {e}", flush=True)
         pause()

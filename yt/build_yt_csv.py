@@ -1,12 +1,4 @@
-"""
-Build yt/yt_videos.csv (YouTube title, long description, tags) for every reel in the queue.
-
-    python yt/build_yt_csv.py            # add rows for reels that are missing
-    python yt/build_yt_csv.py --all      # rebuild every row (overwrites hand edits)
-    python yt/build_yt_csv.py --no-ai    # template text only (no AI calls)
-    python yt/build_yt_csv.py --redo-template   # rewrite with AI only rows that got template text
-AI keys are read from the environment, or from in_up/.env when run on the Mac.
-"""
+"""Build yt_videos.csv."""
 
 import csv
 import os
@@ -55,9 +47,9 @@ def main():
         if pid not in rows or (redo and is_template(rows[pid])):
             rows[pid] = build(pid, row, use_ai=use_ai)
             print(f"{pid}: {rows[pid]['title']}", flush=True)
-            save(rows)  # save as we go: a long AI run can stop half way
+            save(rows)
             if use_ai:
-                time.sleep(4)  # stay under free per-minute limits
+                time.sleep(4)
     save(rows)
     print(f"{len(rows)} rows in {PATH}")
 

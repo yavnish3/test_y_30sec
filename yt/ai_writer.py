@@ -1,11 +1,4 @@
-"""
-Ask an AI for YouTube Shorts SEO text (title, intro, learn points, keywords, hashtags, tags).
-Order: Groq -> GitHub Models -> Gemini (Gemini last: its free quota is needed by the Generate loop).
-Returns a dict or None.
-
-Env: GEMINI_API_KEY, GEMINI_API_KEY_2.._9 (or GEMINI_API_KEYS="k1,k2"), GROQ_API_KEY,
-     GITHUB_TOKEN / GH_MODELS_TOKEN (GitHub Models, free inside Actions).
-"""
+"""AI text."""
 
 import json
 import os

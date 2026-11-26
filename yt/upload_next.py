@@ -1,19 +1,4 @@
-"""
-Upload the next SQL reel to YouTube as a Short.
-
-Videos:   Cloudinary video/upload/insta/reel/SQLxxx.mp4, ONE copy shared with the Instagram
-          loop (test_in_up). Cover: insta/thumbnails/SQLxxx.jpg (set as the YouTube thumbnail).
-          Both are deleted only once the reel is on both Instagram and YouTube.
-Text:     yt_videos.csv (title, long description, tags; built by yt_meta.py from the test_in_up data).
-Progress: yt_posted.csv (id, video_id, posted_at). Posted ids are never uploaded again.
-
-Env: YT_CLIENT_JSON (or YT_CLIENT_ID + YT_CLIENT_SECRET), YT_REFRESH_TOKEN, MEDIA_BASE_URL,
-     CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET, optional YT_PRIVACY (public|unlisted|private).
-
-    python upload_next.py            # upload one
-    python upload_next.py --dry-run  # show what would be uploaded
-Exit code 0 = uploaded, 3 = nothing ready, other = error.
-"""
+"""Upload the next Short."""
 
 import csv
 import io
@@ -48,11 +33,10 @@ def queue():
     return sorted(rows, key=lambda r: r["id"])
 
 
-VIDEOS = os.path.join(HERE, "yt_videos.csv")  # YouTube title / description / tags (editable by hand)
+VIDEOS = os.path.join(HERE, "yt_videos.csv")
 
 
 def video_row(pid, item):
-    """Row from yt_videos.csv; builds and appends one (yt_meta.py) for a new reel."""
     from yt_meta import FIELDS, build
     rows = {}
     if os.path.exists(VIDEOS):
@@ -73,7 +57,7 @@ def video_row(pid, item):
 
 def metadata(pid, item):
     row = video_row(pid, item)
-    clean = lambda t: t.replace("<", "‹").replace(">", "›")  # YouTube rejects < and >
+    clean = lambda t: t.replace("<", "‹").replace(">", "›")
     return {
         "snippet": {"title": clean(row["title"])[:100], "description": clean(row["description"])[:4900],
                     "tags": [t.strip() for t in row["tags"].split(",") if t.strip()],
@@ -84,7 +68,6 @@ def metadata(pid, item):
 
 
 def client():
-    """Client id/secret from YT_CLIENT_JSON (the whole downloaded credentials JSON) or YT_CLIENT_ID/_SECRET."""
     raw = os.environ.get("YT_CLIENT_JSON", "").strip()
     if raw:
         data = json.loads(raw)
@@ -150,7 +133,7 @@ def upload(token, path, meta):
         except requests.RequestException as e:
             print(f"  upload attempt {attempt + 1} broke ({type(e).__name__})", flush=True)
         time.sleep(20)
-        try:  # did YouTube get it all anyway? then use that video (no duplicate)
+        try:
             st = requests.put(location, headers={**auth, "Content-Range": f"bytes */{size}", "Content-Length": "0"},
                               timeout=60)
             if st.status_code in (200, 201):
@@ -161,7 +144,6 @@ def upload(token, path, meta):
 
 
 def set_thumbnail(token, vid, media, pid):
-    """Custom cover from Cloudinary insta/thumbnails/<id>.jpg (shared with Instagram). Never fails the upload."""
     try:
         img = requests.get(f"{media}/image/upload/insta/thumbnails/{pid}.jpg", timeout=60)
         if not img.ok:
@@ -179,20 +161,17 @@ IG_POSTED_URL = "https://raw.githubusercontent.com/yavnish3/test_in_up/main/sche
 
 
 def posted_on_both():
-    """Reel ids already on YouTube and on Instagram. Empty if Instagram's list can't be read."""
     try:
         resp = requests.get(IG_POSTED_URL, params={"t": int(time.time())}, timeout=30)
         resp.raise_for_status()
         ig = {r["id"] for r in csv.DictReader(io.StringIO(resp.text))}
-    except Exception as e:  # noqa: BLE001
+    except Exception as e:
         print(f"Could not read Instagram's posted list ({e}): keeping the video")
         return []
-    return sorted(load_posted() & ig)[-100:]  # Cloudinary deletes up to 100 per call
+    return sorted(load_posted() & ig)[-100:]
 
 
 def delete_from_cloudinary(media):
-    """insta/reel/<id>.mp4 and insta/thumbnails/<id>.jpg are shared with the Instagram loop:
-    delete them only once the reel is posted on both."""
     key, secret = os.environ.get("CLOUDINARY_API_KEY"), os.environ.get("CLOUDINARY_API_SECRET")
     ids = posted_on_both()
     if not (key and secret and ids):
@@ -206,7 +185,7 @@ def delete_from_cloudinary(media):
                                    auth=(key, secret), timeout=60)
             gone = [i for i, v in resp.json().get("deleted", {}).items() if v == "deleted"]
             print(f"Deleted from Cloudinary (posted on both): {gone}")
-        except Exception as e:  # noqa: BLE001 - never fail an upload over cleanup
+        except Exception as e:
             print(f"Warning: could not delete from Cloudinary ({folder}): {e}")
 
 
@@ -216,7 +195,7 @@ def main():
     posted = load_posted()
     todo = [r for r in queue() if r["id"] not in posted]
     item = None
-    for r in todo[:15]:  # first unposted reel whose video is on Cloudinary
+    for r in todo[:15]:
         if reachable(video_url(media, r["id"])):
             item = r
             break

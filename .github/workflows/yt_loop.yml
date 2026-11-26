@@ -1,7 +1,7 @@
 name: YouTube loop
 
 on:
-  workflow_dispatch:   # start it once by hand; after that it restarts itself
+  workflow_dispatch:
     inputs:
       upload_now:
         description: "Upload one Short right away (this run then ends and the loop continues on schedule)"
@@ -10,9 +10,9 @@ on:
         default: "no"
 
 permissions:
-  contents: write      # save yt_posted.csv
-  actions: write       # start the next run of this workflow
-  models: read         # GitHub Models (free AI backup for titles/descriptions)
+  contents: write
+  actions: write
+  models: read
 
 concurrency:
   group: yt-loop
