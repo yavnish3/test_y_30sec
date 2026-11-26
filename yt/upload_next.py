@@ -137,15 +137,25 @@ def upload(token, path, meta):
             sys.exit(3)
         sys.exit(f"YouTube upload start failed ({init.status_code}): {init.text[:400]}")
     location = init.headers["Location"]
+    auth = {"Authorization": f"Bearer {token}"}
     for attempt in range(4):
-        with open(path, "rb") as f:
-            resp = requests.put(location, data=f, timeout=900,
-                                headers={"Authorization": f"Bearer {token}", "Content-Type": "video/mp4",
-                                         "Content-Length": str(size)})
-        if resp.ok:
-            return resp.json()
-        print(f"  upload attempt {attempt + 1} failed ({resp.status_code}): {resp.text[:200]}")
+        try:
+            with open(path, "rb") as f:
+                resp = requests.put(location, data=f, timeout=900,
+                                    headers={**auth, "Content-Type": "video/mp4", "Content-Length": str(size)})
+            if resp.ok:
+                return resp.json()
+            print(f"  upload attempt {attempt + 1} failed ({resp.status_code}): {resp.text[:200]}", flush=True)
+        except requests.RequestException as e:
+            print(f"  upload attempt {attempt + 1} broke ({type(e).__name__})", flush=True)
         time.sleep(20)
+        try:  # did YouTube get it all anyway? then use that video (no duplicate)
+            st = requests.put(location, headers={**auth, "Content-Range": f"bytes */{size}", "Content-Length": "0"},
+                              timeout=60)
+            if st.status_code in (200, 201):
+                return st.json()
+        except requests.RequestException:
+            pass
     sys.exit("YouTube upload failed")
 
 

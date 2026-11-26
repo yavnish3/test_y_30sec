@@ -72,8 +72,15 @@ def upload_once():
         f.write(head + f"exit code: {code}\n\n" + tail + "\n")
     save()
     if code != 0:  # failed or nothing ready: wait before the next run, never restart in a tight loop
-        print(f"upload_next.py exit code {code}: waiting 1 h before the next try", flush=True)
-        time.sleep(3600)
+        pause()
+
+
+def pause():
+    """Wait up to 1 h before the next run, but stay inside GitHub's 6 h job limit
+    (if the job is killed by the timeout, the next run is never started)."""
+    wait = max(0, min(3600, BUDGET + 15 * 60 - (time.time() - START)))
+    print(f"Waiting {wait / 60:.0f} min before the next try", flush=True)
+    time.sleep(wait)
 
 
 def main():
@@ -95,4 +102,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:  # noqa: BLE001 - any crash: pause, so the restart is never a tight loop
+        print(f"loop_runner error: {type(e).__name__}: {e}", flush=True)
+        pause()
