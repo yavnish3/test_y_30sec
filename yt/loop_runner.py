@@ -40,7 +40,7 @@ def git(*args, check=True):
 
 
 def save():
-    git("add", "yt/yt_posted.csv", "yt/yt_videos.csv", check=False)
+    git("add", "yt/yt_posted.csv", "yt/yt_videos.csv", "yt/last_run.log", check=False)
     if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT).returncode == 0:
         return
     git("commit", "-m", "Update yt_posted.csv / yt_videos.csv")
@@ -56,7 +56,20 @@ def save():
 
 def upload_once():
     git("pull", "--rebase", check=False)
-    code = subprocess.run([sys.executable, "-u", "upload_next.py"], cwd=HERE).returncode
+    need = ["YT_REFRESH_TOKEN", "MEDIA_BASE_URL", "CLOUDINARY_API_KEY", "CLOUDINARY_API_SECRET"]
+    missing = [n for n in need if not os.environ.get(n, "").strip()]
+    if not (os.environ.get("YT_CLIENT_JSON", "").strip() or os.environ.get("YT_CLIENT_ID", "").strip()):
+        missing.append("YT_CLIENT_JSON")
+    ai = [n for n in ("GROQ_API_KEY", "GEMINI_API_KEY", "GEMINI_API_KEY_2") if os.environ.get(n, "").strip()]
+    head = (f"run at {datetime.now(timezone.utc):%Y-%m-%d %H:%M} UTC\n"
+            f"missing secrets: {missing or 'none'} | AI keys set: {ai}\n")
+    proc = subprocess.run([sys.executable, "-u", "upload_next.py"], cwd=HERE, capture_output=True, text=True)
+    out = (proc.stdout or "") + (proc.stderr or "")
+    print(out, flush=True)
+    code = proc.returncode
+    tail = "\n".join(l for l in out.splitlines() if not l.startswith((' "description"', '  "description"')))[-3000:]
+    with open(os.path.join(HERE, "last_run.log"), "w", encoding="utf-8") as f:  # readable without logging in
+        f.write(head + f"exit code: {code}\n\n" + tail + "\n")
     save()
     if code != 0:  # failed or nothing ready: wait before the next run, never restart in a tight loop
         print(f"upload_next.py exit code {code}: waiting 1 h before the next try", flush=True)
