@@ -3,11 +3,11 @@
 Uploads the SQL reel series (SQL001, SQL002, …) to YouTube as Shorts, **4 a day**
 (IST 09:00, 13:00, 17:00, 21:00), fully on GitHub Actions.
 
-- Videos: Cloudinary `yt/reel/SQLxxx.mp4`. This copy is kept only for YouTube; the Instagram loop never deletes it.
-  Each file is deleted after it goes up on YouTube.
+- Videos: Cloudinary `insta/reel/SQLxxx.mp4`, ONE copy shared with the Instagram loop (test_in_up).
+  A video is deleted only once it is posted on both Instagram and YouTube (each loop checks the other's posted CSV).
 - Captions: the same `sql_reel_posts.csv` the Instagram loop uses, read from the public `yavnish3/test_in_up` repo.
 - Progress: `yt/yt_posted.csv`. Never overwrite it.
-- New AI reels (SQL082+): the generator in `test_in_up` also uploads a copy to `yt/reel/`.
+- New AI reels (SQL082+): the generator in `test_in_up` uploads them to `insta/reel/`; both loops pick them up.
 
 ## One-time setup
 
@@ -20,9 +20,7 @@ Uploads the SQL reel series (SQL001, SQL002, …) to YouTube as Shorts, **4 a da
 3. GitHub repo → Settings → Secrets → Actions: add
    `YT_CLIENT_JSON` (paste the whole JSON file), `YT_REFRESH_TOKEN`, `MEDIA_BASE_URL`, `CLOUDINARY_API_KEY`, `CLOUDINARY_API_SECRET`
    (the last three are the same values as in test_in_up).
-4. Copy the hand-made reels to Cloudinary (from `in_up/`):
-   `.venv/bin/python test_y_30sec/yt/seed_cloudinary.py ~/Documents/Code/web/test_vid_post/output`
-5. Actions → **YouTube loop** → Run workflow (set `upload_now: yes` to test one right away).
+4. Actions → **YouTube loop** → Run workflow (set `upload_now: yes` to test one right away).
 
 **Important:** YouTube keeps videos uploaded through the API from an *unverified* API project
 **private** until the project passes Google's audit. Apply for it with the "YouTube API Services Audit and Quota Extension" form.
