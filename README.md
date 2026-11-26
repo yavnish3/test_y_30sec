@@ -6,7 +6,8 @@ Uploads the SQL reel series (SQL001, SQL002, …) to YouTube as Shorts, **4 a da
 - Videos: Cloudinary `insta/reel/SQLxxx.mp4`, ONE copy shared with the Instagram loop (test_in_up).
   A video is deleted only once it is posted on both Instagram and YouTube (each loop checks the other's posted CSV).
 - Title / description / tags: `yt/yt_videos.csv` (YouTube-only text: SEO title, long description, 15 hashtags, ~35 tags).
-  Edit it by hand any time. Rows for new reels are built automatically by `yt/yt_meta.py` from the test_in_up data
+  Edit it by hand any time. Rows for new reels are written automatically by **AI** (`yt/ai_writer.py`: Groq → GitHub Models → Gemini; title, intro,
+  learn points, keywords, hashtags, tags) while the example query / mistake / next topic come from the test_in_up data (`yt/yt_meta.py`)
   (`python yt/build_yt_csv.py` adds missing rows; `--all` rebuilds every row and overwrites hand edits).
 - Progress: `yt/yt_posted.csv`. Never overwrite it.
 - New AI reels (SQL082+): the generator in `test_in_up` uploads them to `insta/reel/`; both loops pick them up.
@@ -21,7 +22,7 @@ Uploads the SQL reel series (SQL001, SQL002, …) to YouTube as Shorts, **4 a da
 2. On the Mac (from `in_up/`): `python3 test_y_30sec/yt/get_token.py ~/Downloads/client_secret_XXXX.json`. Allow access; the refresh token is saved to `in_up/.env`.
 3. GitHub repo → Settings → Secrets → Actions: add
    `YT_CLIENT_JSON` (paste the whole JSON file), `YT_REFRESH_TOKEN`, `MEDIA_BASE_URL`, `CLOUDINARY_API_KEY`, `CLOUDINARY_API_SECRET`
-   (the last three are the same values as in test_in_up).
+   (the last three are the same values as in test_in_up), plus for the AI text: `GROQ_API_KEY`, `GEMINI_API_KEY`, `GEMINI_API_KEY_2`.
 4. Actions → **YouTube loop** → Run workflow (set `upload_now: yes` to test one right away).
 
 **Important:** YouTube keeps videos uploaded through the API from an *unverified* API project

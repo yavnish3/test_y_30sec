@@ -96,7 +96,15 @@ def topic_tags(row, topic):
     return tags
 
 
-def build(pid, row, content=None):
+def clean_hashtag(h):
+    h = "#" + re.sub(r"[^\w]", "", str(h).lower())
+    return h if len(h) > 2 else ""
+
+
+def build(pid, row, content=None, use_ai=True):
+    """One yt_videos.csv row. The AI writes title / intro / learn points / keywords / hashtags / tags;
+    the example query, mistake and next topic always come from our own data (no AI mistakes there).
+    Falls back to the template text if every AI is unavailable."""
     content = content if content is not None else fetch_content(pid)
     topic = plain(row.get("topic") or content.get("topic") or pid)
     part = int(re.sub(r"\D", "", pid) or 0)
@@ -106,29 +114,44 @@ def build(pid, row, content=None):
     if not nxt:
         m = re.search(r"Next:\s*(.+)", row.get("caption") or "")
         nxt = m.group(1).strip() if m else ""
-
-    lines = [hook, "", f"📌 SQL Series Part {part}: {topic}" + (f"  ({module})" if module else ""), ""]
     pts = learn_points(row, content)
-    if pts:
-        lines += ["Is Short mein seekho:"] + [f"✅ {p}" for p in pts] + [""]
     code = next((s.get("code") for s in slides(content, "code") if s.get("code")), "")
     if not code:
         m = re.search(r"Example:\s*(.+)$", row.get("description", ""))
         code = m.group(1).strip() if m else ""
-    if code:
-        lines += ["💻 Example query:", code.strip(), ""]
+    mistake_lines, mistake_text = [], ""
     mistake = slides(content, "mistake")
     if mistake:
         mk = mistake[0]
-        lines += [f"❌ Common mistake: {plain(mk.get('wrong'))}",
-                  f"✔️ Sahi tareeka: {plain(mk.get('right'))}"]
+        mistake_text = plain(mk.get("wrong"))
+        mistake_lines = [f"❌ Common mistake: {mistake_text}", f"✔️ Sahi tareeka: {plain(mk.get('right'))}"]
         if mk.get("why"):
-            lines.append(f"💡 Kyun: {plain(mk.get('why'))}")
-        lines.append("")
+            mistake_lines.append(f"💡 Kyun: {plain(mk.get('why'))}")
     else:
         m = re.search(r"Galti mat karna:\s*(.+)", row.get("caption") or "")
         if m:
-            lines += [f"❌ Common mistake: {m.group(1).strip()}", ""]
+            mistake_text = m.group(1).strip()
+            mistake_lines = [f"❌ Common mistake: {mistake_text}"]
+
+    ai = None
+    if use_ai:
+        from ai_writer import write
+        ai = write(part, topic, module, hook, pts, code, mistake_text)
+        print(f"{pid}: {'AI text' if ai else 'AI unavailable, template text'}", flush=True)
+
+    if ai:
+        intro = [plain(l) for l in str(ai["intro"]).splitlines() if l.strip()]
+        lines = intro + ["", f"📌 SQL Series Part {part}: {topic}" + (f"  ({module})" if module else ""), ""]
+        learn = [plain(p) for p in ai["learn"] if str(p).strip()][:6]
+    else:
+        lines = [hook, "", f"📌 SQL Series Part {part}: {topic}" + (f"  ({module})" if module else ""), ""]
+        learn = pts
+    if learn:
+        lines += ["Is Short mein seekho:"] + [f"✅ {p}" for p in learn] + [""]
+    if code:
+        lines += ["💻 Example query:", code.strip(), ""]
+    if mistake_lines:
+        lines += mistake_lines + [""]
     if nxt:
         lines += [f"➡️ Next video: {nxt}", ""]
     lines += [
@@ -141,26 +164,38 @@ def build(pid, row, content=None):
         "📸 Instagram par carousel notes: @the30secdev",
         "💾 Video save kar lo, interview se pehle revise karna.",
         "",
-        "Is video mein: " + ", ".join(dict.fromkeys(
-            [topic, f"{topic.rstrip('?')} in SQL" if not topic.endswith("?") else topic, "SQL tutorial in Hindi", "SQL for beginners",
-             "SQL interview questions", "MySQL", "PostgreSQL", "DBMS"])),
-        "",
     ]
-    hashtags = []
-    topic_h = [h for h in (row.get("hashtags") or "").split() if h.startswith("#")]
+    if ai and str(ai.get("keywords", "")).strip():
+        lines += ["🔎 " + plain(ai["keywords"]), ""]
+    else:
+        lines += ["Is video mein: " + ", ".join(dict.fromkeys(
+            [topic, f"{topic.rstrip('?')} in SQL" if not topic.endswith("?") else topic, "SQL tutorial in Hindi",
+             "SQL for beginners", "SQL interview questions", "MySQL", "PostgreSQL", "DBMS"])), ""]
+
     th = "#" + re.sub(r"\W", "", topic.lower())
-    for h in BASE_HASHTAGS[:3] + ([th] if len(th) <= 21 else []) + topic_h + BASE_HASHTAGS[3:]:
-        if len(h) > 2 and h.lower() not in hashtags:
-            hashtags.append(h.lower())
-    lines.append(" ".join(hashtags[:MAX_HASHTAGS]))
+    first = BASE_HASHTAGS[:3] + ([th] if len(th) <= 21 else [])
+    rest = [clean_hashtag(h) for h in ai["hashtags"]] if ai else []
+    rest += [h for h in (row.get("hashtags") or "").split() if h.startswith("#")] + BASE_HASHTAGS[3:]
+    hashtags = []
+    for h in first + rest:
+        h = h.lower()
+        if h and h not in hashtags:
+            hashtags.append(h)
+    lines.append(" ".join(hashtags[:MAX_HASHTAGS]))  # YouTube drops ALL hashtags above 15
     desc = "\n".join(lines).replace("<", "‹").replace(">", "›")[:4900]
 
     tags, total = [], 0
-    for t in topic_tags(row, topic) + BASE_TAGS:
-        t = t.replace("<", "").replace(">", "").strip()
+    ai_tags = [plain(t).lower().lstrip("#") for t in ai["tags"]] if ai else []
+    for t in ai_tags + topic_tags(row, topic) + BASE_TAGS:
+        t = t.replace("<", "").replace(">", "").replace(",", " ").strip()
         cost = len(t) + (2 if " " in t else 0) + 1
-        if t and t not in tags and total + cost <= MAX_TAGS_CHARS:
+        if t and len(t) <= 40 and t not in tags and total + cost <= MAX_TAGS_CHARS:
             tags.append(t)
             total += cost
-    title = make_title(topic, hook, part).replace("<", "‹").replace(">", "›")
+    if ai:
+        t = re.sub(r"\s*#\w+", "", plain(ai["title"])).strip()  # no stray hashtags like #11
+        title = f"{t} #shorts" if len(t) + 8 <= 100 else t[:100]
+    else:
+        title = make_title(topic, hook, part)
+    title = title.replace("<", "‹").replace(">", "›")
     return {"id": pid, "title": title, "description": desc, "tags": ", ".join(tags)}

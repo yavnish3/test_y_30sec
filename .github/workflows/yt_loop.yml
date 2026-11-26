@@ -12,6 +12,7 @@ on:
 permissions:
   contents: write      # save yt_posted.csv
   actions: write       # start the next run of this workflow
+  models: read         # GitHub Models (free AI backup for titles/descriptions)
 
 concurrency:
   group: yt-loop
@@ -46,6 +47,10 @@ jobs:
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
           YT_PRIVACY: ${{ secrets.YT_PRIVACY || 'public' }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
+          GITHUB_TOKEN: ${{ github.token }}
           UPLOAD_NOW: ${{ inputs.upload_now || 'no' }}
         run: python -u loop_runner.py
 
