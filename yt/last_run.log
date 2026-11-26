@@ -1,0 +1,49 @@
+run at 2026-11-26 16:35 UTC
+missing secrets: none | AI keys set: ['GROQ_API_KEY', 'GEMINI_API_KEY', 'GEMINI_API_KEY_2']
+exit code: 0
+
+Next: SQL001
+{
+ "snippet": {
+  "title": "Database kya hota hai? 🤔 SQL se jaaniye app ka data ghar! 🚀 #shorts",
+  "tags": [
+   "database kya hota hai",
+   "sql tutorial hindi",
+   "sql interview questions",
+   "sql basics",
+   "sql select query",
+   "database vs excel",
+   "sql for beginners",
+   "data storage india",
+   "sql short video",
+   "sql hindi tutorial",
+   "sql ka introduction",
+   "database introduction",
+   "sql select example",
+   "learn sql fast",
+   "sql interview prep",
+   "sql data management",
+   "sql coding basics",
+   "sql query tutorial",
+   "sql in hindi",
+   "sql explained",
+   "database concepts",
+   "sql for data analyst",
+   "sql practice questions",
+   "sql tips",
+   "sql",
+   "dbms"
+  ],
+  "categoryId": "27",
+  "defaultLanguage": "hi",
+  "defaultAudioLanguage": "hi"
+ },
+ "status": {
+  "privacyStatus": "public",
+  "selfDeclaredMadeForKids": false,
+  "embeddable": true
+ }
+}
+Downloaded 15.8 MB, uploading to YouTube…
+Uploaded SQL001: https://youtube.com/shorts/3-VjTY_U0QI  (privacy: public, upload: uploaded)
+Deleted from Cloudinary (posted on both): ['insta/reel/SQL001']
