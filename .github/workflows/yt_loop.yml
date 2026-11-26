@@ -1,0 +1,55 @@
+name: YouTube loop
+
+on:
+  workflow_dispatch:   # start it once by hand; after that it restarts itself
+    inputs:
+      upload_now:
+        description: "Upload one Short right away (this run then ends and the loop continues on schedule)"
+        type: choice
+        options: ["no", "yes"]
+        default: "no"
+
+permissions:
+  contents: write      # save yt_posted.csv
+  actions: write       # start the next run of this workflow
+
+concurrency:
+  group: yt-loop
+  cancel-in-progress: false
+
+jobs:
+  loop:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r yt/requirements.txt
+
+      - name: Set git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Wait for the next slot and upload once
+        working-directory: yt
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          MEDIA_BASE_URL: ${{ secrets.MEDIA_BASE_URL }}
+          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+          YT_PRIVACY: ${{ secrets.YT_PRIVACY || 'public' }}
+          UPLOAD_NOW: ${{ inputs.upload_now || 'no' }}
+        run: python -u loop_runner.py
+
+      - name: Start the next loop run
+        if: ${{ !cancelled() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run yt_loop.yml --ref main
