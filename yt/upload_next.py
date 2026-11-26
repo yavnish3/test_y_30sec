@@ -3,7 +3,7 @@ Upload the next SQL reel to YouTube as a Short.
 
 Videos:   Cloudinary video/upload/insta/reel/SQLxxx.mp4, ONE copy shared with the Instagram
           loop (test_in_up). A video is deleted only once it is on both Instagram and YouTube.
-Captions: sql_reel_posts.csv from the public yavnish3/test_in_up repo (same text as Instagram).
+Text:     yt_videos.csv (title, long description, tags; built by yt_meta.py from the test_in_up data).
 Progress: yt_posted.csv (id, video_id, posted_at). Posted ids are never uploaded again.
 
 Env: YT_CLIENT_JSON (or YT_CLIENT_ID + YT_CLIENT_SECRET), YT_REFRESH_TOKEN, MEDIA_BASE_URL,
@@ -29,8 +29,6 @@ import requests
 HERE = os.path.dirname(os.path.abspath(__file__))
 POSTED = os.path.join(HERE, "yt_posted.csv")
 QUEUE_URL = "https://raw.githubusercontent.com/yavnish3/test_in_up/main/scheduler/sql_reel_posts.csv"
-EXTRA_TAGS = ["sql", "learn sql", "sql in hindi", "sql tutorial", "database", "dbms",
-              "data analyst", "sql interview questions", "coding", "programming", "shorts"]
 
 
 def load_posted():
@@ -50,39 +48,39 @@ def queue():
     return sorted(rows, key=lambda r: r["id"])
 
 
-def clean(text):
-    return text.replace("<", "‹").replace(">", "›")  # YouTube rejects < and >
+VIDEOS = os.path.join(HERE, "yt_videos.csv")  # YouTube title / description / tags (editable by hand)
 
 
-def metadata(item):
-    title = clean(item["title"].strip())
-    if len(title) + 8 <= 100:
-        title += " #shorts"
-    title = title[:100]
-    tags_line = item.get("hashtags", "").strip()
-    desc = clean(f"{item['caption'].strip()}\n\n{tags_line} #shorts\n\n"
-                 "Roz SQL seekho, 30 second mein. Subscribe: @the30sec_dev")
-    tags, total = [], 0
-    for t in [h.lstrip("#") for h in tags_line.split()] + EXTRA_TAGS:
-        if t and t not in tags and total + len(t) + 1 <= 450:
-            tags.append(t)
-            total += len(t) + 1
+def video_row(pid, item):
+    """Row from yt_videos.csv; builds and appends one (yt_meta.py) for a new reel."""
+    from yt_meta import FIELDS, build
+    rows = {}
+    if os.path.exists(VIDEOS):
+        with open(VIDEOS, encoding="utf-8") as f:
+            rows = {r["id"]: r for r in csv.DictReader(f)}
+    if pid in rows:
+        return rows[pid]
+    row = build(pid, item)
+    new_file = not os.path.exists(VIDEOS)
+    with open(VIDEOS, "a", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=FIELDS)
+        if new_file:
+            w.writeheader()
+        w.writerow(row)
+    print(f"{pid}: added to yt_videos.csv")
+    return row
+
+
+def metadata(pid, item):
+    row = video_row(pid, item)
+    clean = lambda t: t.replace("<", "‹").replace(">", "›")  # YouTube rejects < and >
     return {
-        "snippet": {"title": title, "description": desc[:4900], "tags": tags,
+        "snippet": {"title": clean(row["title"])[:100], "description": clean(row["description"])[:4900],
+                    "tags": [t.strip() for t in row["tags"].split(",") if t.strip()],
                     "categoryId": "27", "defaultLanguage": "hi", "defaultAudioLanguage": "hi"},
         "status": {"privacyStatus": os.environ.get("YT_PRIVACY", "public"),
                    "selfDeclaredMadeForKids": False, "embeddable": True},
     }
-
-
-def client():
-    """Client id/secret from YT_CLIENT_JSON (the whole downloaded credentials JSON) or YT_CLIENT_ID/_SECRET."""
-    raw = os.environ.get("YT_CLIENT_JSON", "").strip()
-    if raw:
-        data = json.loads(raw)
-        data = data.get("installed") or data.get("web") or data
-        return data["client_id"], data["client_secret"]
-    return os.environ["YT_CLIENT_ID"], os.environ["YT_CLIENT_SECRET"]
 
 
 def access_token():
@@ -189,7 +187,8 @@ def main():
     if not item:
         print(f"Nothing ready to upload ({len(todo)} not uploaded yet)")
         sys.exit(3)
-    pid, meta = item["id"], metadata(item)
+    pid = item["id"]
+    meta = metadata(pid, item)
     print(f"Next: {pid}\n{json.dumps(meta, ensure_ascii=False, indent=1)}")
     if dry:
         return

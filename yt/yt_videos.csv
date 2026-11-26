@@ -1,0 +1,2856 @@
+id,title,description,tags
+SQL001,Database kya hota hai? | Instagram tumhari saari photos kahan chhupata hai? 🤫 | SQL Hindi #1 #shorts,"Instagram tumhari saari photos kahan chhupata hai? 🤫
+
+📌 SQL Series Part 1: Database kya hota hai?  (Introduction)
+
+Is Short mein seekho:
+✅ Database = organized data ka ghar
+✅ Har app ka data yahin rehta hai
+✅ Excel se bada, fast aur safe
+✅ Baat karne ki language: SQL
+
+💻 Example query:
+SELECT name, city
+FROM users
+WHERE city = 'Delhi';
+
+❌ Common mistake: Database aur Excel ko same samajhna
+✔️ Sahi tareeka: Database = bada, multi-user, safe system, rules ke saath
+💡 Kyun: Excel ek file hai, database ek poora system hai
+
+➡️ Next video: SQL kya hai?
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Database kya hota hai?, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #databasekyahotahai #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #database #dbms #rdbms #sqltutorial #sqlinterview","database kya hota hai, database kya hota hai sql, database kya hota hai in hindi, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, database, dbms, rdbms, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, data analyst, data analytics, data engineer, sql course, sql full course, sql hindi, shorts"
+SQL002,"SQL kya hai? | Database se baat karni hai? Hindi nahi, SQL bolo 😎 | SQL Hindi #2 #shorts","Database se baat karni hai? Hindi nahi, SQL bolo 😎
+
+📌 SQL Series Part 2: SQL kya hai?  (Introduction)
+
+Is Short mein seekho:
+✅ SQL = DB se sawaal poochne ki language
+✅ Jawab hamesha table mein
+✅ Declarative: kya bolo, kaise nahi
+✅ MySQL, PostgreSQL, SQL Server: sab SQL
+
+💻 Example query:
+SELECT name
+FROM employees;
+
+❌ Common mistake: SQL ko Python jaisa loop-wala samajhna
+✔️ Sahi tareeka: SQL mein bas bolo kya chahiye, poora result ek saath
+💡 Kyun: Row-by-row loop nahi, SQL sets pe kaam karta hai
+
+➡️ Next video: Table, Row aur Column
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: SQL kya hai?, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #sqlkyahai #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #mysql #postgresql #sqltutorial #sqlinterview #database","sql kya hai, sql kya hai sql, sql kya hai in hindi, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, mysql, postgresql, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, sql server, database, dbms, rdbms, data analyst, data analytics, data engineer, sql course, sql full course, sql hindi, sql basics, coding in hindi"
+SQL003,"Table, Row aur Column | Excel ka bada bhai: Table, Row aur Column 📊 | SQL Hindi #3 #shorts","Excel ka bada bhai: Table, Row aur Column 📊
+
+📌 SQL Series Part 3: Table, Row aur Column  (Introduction)
+
+Is Short mein seekho:
+✅ Table = data ka grid
+✅ Row = ek record (horizontal)
+✅ Column = ek field (vertical)
+✅ Cell = row × column = ek value
+
+💻 Example query:
+SELECT *
+FROM employees;
+
+❌ Common mistake: Row ko column samajhna, column ko row
+✔️ Sahi tareeka: Row = ek record (Meera), Column = ek field (city)
+💡 Kyun: Ulta samjhe toh queries ulti padengi 🙃
+
+➡️ Next video: Data Types
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Table, Row aur Column, Table, Row aur Column in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #tablerowaurcolumn #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #table #rows #columns #sqltutorial #sqlinterview","table row aur column, table row aur column in sql, sql table row aur column, table row aur column sql in hindi, table row aur column sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, table, rows, columns, sql introduction, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server"
+SQL004,Data Types | Paise ko FLOAT mein rakha? Bank waale ro denge 😭 | SQL Hindi #4 #shorts,"Paise ko FLOAT mein rakha? Bank waale ro denge 😭
+
+📌 SQL Series Part 4: Data Types  (Introduction)
+
+Is Short mein seekho:
+✅ INT = poore number
+✅ VARCHAR(n) = text, max n
+✅ Paisa = DECIMAL, FLOAT kabhi nahi
+✅ DATE = taareekh, BOOLEAN = haan/na
+
+💻 Example query:
+CREATE TABLE products (
+  id INT,
+  name VARCHAR(50),
+  price DECIMAL(10,2),
+  added_on DATE
+);
+
+❌ Common mistake: price FLOAT
+✔️ Sahi tareeka: price DECIMAL(10,2)
+💡 Kyun: FLOAT approx hai, paise mein chhote errors jud-jud ke bade ban jaate hain 💀
+
+➡️ Next video: Primary Key
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Data Types, Data Types in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #datatypes #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #varchar #int #sqltutorial #sqlinterview #mysql","data types, data types in sql, sql data types, data types sql in hindi, data types sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, datatypes, varchar, int, sql introduction, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, sql course"
+SQL005,Primary Key | Har row ka Aadhaar card: Primary Key 🪪 | SQL Hindi #5 #shorts,"Har row ka Aadhaar card: Primary Key 🪪
+
+📌 SQL Series Part 5: Primary Key  (Introduction)
+
+Is Short mein seekho:
+✅ PK = UNIQUE + NOT NULL
+✅ Har row ki pehchaan
+✅ Ek table, ek primary key
+✅ Name/phone nahi, id use karo
+
+💻 Example query:
+CREATE TABLE employees (
+  id INT PRIMARY KEY,
+  name VARCHAR(50)
+);
+
+❌ Common mistake: name ya phone ko primary key banana
+✔️ Sahi tareeka: Alag id column ko PRIMARY KEY banao
+💡 Kyun: Naam repeat hote hain, phone number badal jaate hain 📵
+
+➡️ Next video: CREATE TABLE
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Primary Key, Primary Key in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #primarykey #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #constraints #sqlbasics #sqltutorial #sqlinterview #mysql","primary key, primary key in sql, sql primary key, primary key sql in hindi, primary key sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, primarykey, constraints, sqlbasics, sql introduction, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, sql course"
+SQL006,"CREATE TABLE | 10 second mein apni pehli table, chai thandi hone se pehle ☕ | SQL Hindi #6 #shorts","10 second mein apni pehli table, chai thandi hone se pehle ☕
+
+📌 SQL Series Part 6: CREATE TABLE  (Create & Insert)
+
+Is Short mein seekho:
+✅ CREATE TABLE naam ( ... );
+✅ Har column: naam + type
+✅ Comma beech mein, last mein nahi
+✅ snake_case naam, semicolon end
+
+💻 Example query:
+CREATE TABLE employees (
+  id INT PRIMARY KEY,
+  name VARCHAR(50),
+  dept VARCHAR(20),
+  salary INT,
+  city VARCHAR(30)
+);
+
+❌ Common mistake: CREATE TABLE t ( id INT, name VARCHAR(50), );
+✔️ Sahi tareeka: CREATE TABLE t ( id INT, name VARCHAR(50) );
+💡 Kyun: Last column ke baad comma = syntax error. Comma sirf beech mein ✋
+
+➡️ Next video: INSERT INTO
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: CREATE TABLE, CREATE TABLE in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #createtable #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #ddl #sqlbasics #sqltutorial #sqlinterview #mysql","create table, create table in sql, sql create table, create table sql in hindi, create table sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, createtable, ddl, sqlbasics, sql create & insert, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, sql course"
+SQL007,"INSERT INTO | Khaali table udaas hai, chalo data khilaate hain 🍽️ | SQL Hindi #7 #shorts","Khaali table udaas hai, chalo data khilaate hain 🍽️
+
+📌 SQL Series Part 7: INSERT INTO  (Create & Insert)
+
+Is Short mein seekho:
+✅ INSERT INTO table (cols) VALUES (...)
+✅ Text aur date 'single quotes' mein
+✅ Kai rows: ( ),( ) comma se
+✅ Column list likho, safe raho
+
+💻 Example query:
+INSERT INTO employees
+(id, name, dept, salary, city)
+VALUES
+(1,'Aarav','IT',60000,'Delhi'),
+(2,'Meera','HR',45000,'Mumbai');
+
+❌ Common mistake: VALUES (3, ""Kabir"", ""Sales"")
+✔️ Sahi tareeka: VALUES (3, 'Kabir', 'Sales')
+💡 Kyun: Standard SQL mein ""double"" = column naam. PostgreSQL error dega, text hamesha 'single' ✅
+
+➡️ Next video: SELECT * FROM
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: INSERT INTO, INSERT INTO in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #insertinto #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #insert #dml #sqlbasics #sqltutorial #sqlinterview","insert into, insert into in sql, sql insert into, insert into sql in hindi, insert into sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, insert, dml, sqlbasics, sql create & insert, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, shorts"
+SQL008,SELECT * FROM | SELECT * : SQL ka 'sab kuch dikha do bhai' button 👀 | SQL Hindi #8 #shorts,"SELECT * : SQL ka 'sab kuch dikha do bhai' button 👀
+
+📌 SQL Series Part 8: SELECT * FROM  (Select Basics)
+
+Is Short mein seekho:
+✅ SELECT kya, FROM kahan se
+✅ Star ( * ) = saare columns
+✅ Explore ke liye perfect
+✅ Production mein avoid, columns naam se
+
+💻 Example query:
+SELECT * FROM employees;
+
+❌ Common mistake: Bade production table pe SELECT * chalana
+✔️ Sahi tareeka: Sirf zaroori columns maango, LIMIT lagao
+💡 Kyun: Crore rows × saare columns = slow query, network jam, DB bhi pareshaan 🐢
+
+➡️ Next video: Specific Columns Select karna
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: SELECT * FROM, SELECT * FROM in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #selectfrom #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #select #sqlquery #sqlbasics #sqltutorial #sqlinterview","select from, select from in sql, sql select from, select from sql in hindi, select from sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, select, sqlquery, sqlbasics, sql select basics, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst"
+SQL009,"Specific Columns Select karna | Poori table nahi chahiye, bas naam aur salary 💸 #shorts","Poori table nahi chahiye, bas naam aur salary 💸
+
+📌 SQL Series Part 9: Specific Columns Select karna  (Select Basics)
+
+Is Short mein seekho:
+✅ SELECT col1, col2 FROM table
+✅ Comma se alag, last pe nahi
+✅ Order tum decide karo
+✅ Kam columns = fast + clean
+
+💻 Example query:
+SELECT name, salary
+FROM employees;
+
+❌ Common mistake: SELECT nme, salary FROM employees;
+✔️ Sahi tareeka: SELECT name, salary FROM employees;
+💡 Kyun: Spelling galat = ""Unknown column"" error. Naam exact likho ✍️
+
+➡️ Next video: Alias (AS)
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Specific Columns Select karna, Specific Columns Select karna in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #select #columns #sqlbasics #sqltutorial #sqlinterview #mysql","specific columns select karna, specific columns select karna in sql, sql specific columns select karna, specific columns select karna sql in hindi, specific columns select karna sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, select, columns, sqlbasics, sql select basics, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, mysql"
+SQL010,Alias (AS) | Column ka naam pasand nahi? AS laga ke naamkaran karo 🏷️ | SQL Hindi #10 #shorts,"Column ka naam pasand nahi? AS laga ke naamkaran karo 🏷️
+
+📌 SQL Series Part 10: Alias (AS)  (Select Basics)
+
+Is Short mein seekho:
+✅ AS = column ka temporary naam
+✅ Sirf result mein, table same
+✅ Calculation ke saath must
+✅ Alias WHERE mein nahi chalta
+
+💻 Example query:
+SELECT
+  name AS employee_name,
+  salary * 12 AS yearly_salary
+FROM employees;
+
+❌ Common mistake: SELECT salary*12 AS yearly FROM employees WHERE yearly › 600000;
+✔️ Sahi tareeka: SELECT salary*12 AS yearly FROM employees WHERE salary*12 › 600000;
+💡 Kyun: WHERE, SELECT se pehle chalta hai. Alias tab tak bana hi nahi 🤷 (ORDER BY mein chalega)
+
+➡️ Next video: DISTINCT
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Alias (AS), Alias (AS) in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #aliasas #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #alias #as #sqltips #sqltutorial #sqlinterview","alias (as), alias (as) in sql, sql alias (as), alias (as) sql in hindi, alias (as) sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, alias, as, sqltips, sql select basics, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, data analytics"
+SQL011,DISTINCT | Delhi 3 baar dikh raha hai? DISTINCT bolega 'ek hi kaafi hai' ✋ | SQL Hindi #11 #shorts,"Delhi 3 baar dikh raha hai? DISTINCT bolega 'ek hi kaafi hai' ✋
+
+📌 SQL Series Part 11: DISTINCT  (Select Basics)
+
+Is Short mein seekho:
+✅ DISTINCT = duplicates hatao
+✅ SELECT ke turant baad likho
+✅ Multi columns = combination unique
+✅ COUNT(DISTINCT col) = unique ginti
+
+💻 Example query:
+SELECT DISTINCT city
+FROM employees;
+
+❌ Common mistake: DISTINCT sirf pehle column pe lagta hai
+✔️ Sahi tareeka: DISTINCT saare selected columns ke combination pe lagta hai
+💡 Kyun: SELECT DISTINCT dept, city mein dept repeat ho sakta hai, combo nahi 🔁
+
+➡️ Next video: WHERE Clause
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: DISTINCT, DISTINCT in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #distinct #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #duplicates #sqltips #sqltutorial #sqlinterview #mysql","distinct, distinct in sql, sql distinct, distinct sql in hindi, distinct sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, duplicates, sqltips, sql select basics, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, data analytics, sql hindi"
+SQL012,"WHERE Clause | Poori duniya nahi, sirf Delhi waale chahiye 🎯 | SQL Hindi #12 #shorts","Poori duniya nahi, sirf Delhi waale chahiye 🎯
+
+📌 SQL Series Part 12: WHERE Clause  (Filtering)
+
+Is Short mein seekho:
+✅ WHERE = rows ka filter
+✅ Condition true → row rahegi
+✅ Text 'quotes' mein, number bina
+✅ Barabar = ek =, == nahi
+
+💻 Example query:
+SELECT *
+FROM employees
+WHERE city = 'Delhi';
+
+❌ Common mistake: WHERE city == 'Delhi'
+✔️ Sahi tareeka: WHERE city = 'Delhi'
+💡 Kyun: SQL mein barabar = ek hi =. Double == Python/JS wali aadat hai 🐍
+
+➡️ Next video: Comparison Operators
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: WHERE Clause, WHERE Clause in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #whereclause #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #where #filter #sqlbasics #sqltutorial #sqlinterview","where clause, where clause in sql, sql where clause, where clause sql in hindi, where clause sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, where, filter, sqlbasics, sql filtering, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, shorts"
+SQL013,Comparison Operators | 6 symbols jo tumhara data judge karte hain ⚖️ | SQL Hindi #13 #shorts,"6 symbols jo tumhara data judge karte hain ⚖️
+
+📌 SQL Series Part 13: Comparison Operators  (Filtering)
+
+Is Short mein seekho:
+✅ = barabar, ‹› / != not equal
+✅ › ‹ bada, chhota
+✅ ›= ‹= boundary bhi andar
+✅ Dates aur text pe bhi kaam karte
+
+💻 Example query:
+SELECT name, salary
+FROM employees
+WHERE salary › 60000;
+
+❌ Common mistake: ""60k ya usse zyada"" ke liye salary › 60000
+✔️ Sahi tareeka: ""Zyada ya barabar"" = salary ›= 60000
+💡 Kyun: › mein boundary chhoot jaati hai. Aarav (60000) gayab 😢
+
+➡️ Next video: AND, OR, NOT
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Comparison Operators, Comparison Operators in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #comparisonoperators #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #operators #where #sqlbasics #sqltutorial #sqlinterview","comparison operators, comparison operators in sql, sql comparison operators, comparison operators sql in hindi, comparison operators sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, operators, where, sqlbasics, sql filtering, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, database"
+SQL014,"AND, OR, NOT | AND, OR, NOT: SQL ka relationship status 💔 | SQL Hindi #14 #shorts","AND, OR, NOT: SQL ka relationship status 💔
+
+📌 SQL Series Part 14: AND, OR, NOT  (Filtering)
+
+Is Short mein seekho:
+✅ AND = dono true
+✅ OR = koi ek true
+✅ NOT = ulta
+✅ Mix kiya? ( ) lagao, AND pehle chalta
+
+💻 Example query:
+SELECT *
+FROM employees
+WHERE dept = 'IT'
+  AND city = 'Delhi';
+
+❌ Common mistake: WHERE dept = 'IT' OR dept = 'HR' AND city = 'Delhi'
+✔️ Sahi tareeka: WHERE (dept = 'IT' OR dept = 'HR') AND city = 'Delhi'
+💡 Kyun: Bina bracket: IT ya (HR+Delhi). Pune wali Riya bhi aa gayi 😵
+
+➡️ Next video: IN Operator
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: AND, OR, NOT, AND, OR, NOT in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #andornot #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #and #or #logic #sqltutorial #sqlinterview","and or not, and or not in sql, sql and or not, and or not sql in hindi, and or not sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, and, or, logic, sql filtering, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, data analytics, shorts"
+SQL015,"IN Operator | Itne saare OR? Bhai IN laga le, ungli thak jaayegi 🙏 | SQL Hindi #15 #shorts","Itne saare OR? Bhai IN laga le, ungli thak jaayegi 🙏
+
+📌 SQL Series Part 15: IN Operator  (Filtering)
+
+Is Short mein seekho:
+✅ IN (list) = koi bhi match
+✅ Bahut saare OR ka shortcut
+✅ NOT IN = list ke bahar
+✅ NOT IN + NULL = khaali result ⚠️
+
+💻 Example query:
+SELECT name, city
+FROM employees
+WHERE city IN
+  ('Delhi', 'Mumbai');
+
+❌ Common mistake: WHERE city NOT IN ('Delhi', NULL)
+✔️ Sahi tareeka: WHERE city NOT IN ('Delhi') -- list se NULL hatao
+💡 Kyun: NOT IN mein ek bhi NULL = result khaali. Kyunki x ‹› NULL kabhi true nahi 👻
+
+➡️ Next video: BETWEEN
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: IN Operator, IN Operator in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #inoperator #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #in #filter #sqltips #sqltutorial #sqlinterview","in operator, in operator in sql, sql in operator, in operator sql in hindi, in operator sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, in, filter, sqltips, sql filtering, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, data analytics"
+SQL016,BETWEEN | Salary 40k se 60k ke beech? BETWEEN hai na 📏 | SQL Hindi #16 #shorts,"Salary 40k se 60k ke beech? BETWEEN hai na 📏
+
+📌 SQL Series Part 16: BETWEEN  (Filtering)
+
+Is Short mein seekho:
+✅ BETWEEN a AND b = range
+✅ Dono ends include
+✅ Numbers + dates dono pe
+✅ Chhota pehle, NOT BETWEEN bhi hai
+
+💻 Example query:
+SELECT name, salary
+FROM employees
+WHERE salary
+  BETWEEN 40000 AND 60000;
+
+❌ Common mistake: BETWEEN 40000 AND 60000 mein 40000 aur 60000 nahi aayenge
+✔️ Sahi tareeka: Dono boundaries include hoti hain: 40000 aur 60000 andar
+💡 Kyun: BETWEEN = ›= AND ‹=, isliye edges bhi count 📐
+
+➡️ Next video: LIKE aur Wildcards
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: BETWEEN, BETWEEN in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #between #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #range #sqlbasics #sqltutorial #sqlinterview #mysql","between, between in sql, sql between, between sql in hindi, between sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, range, sqlbasics, sql filtering, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, data analytics, data engineer, shorts"
+SQL017,LIKE aur Wildcards | Naam ka sirf 'A' yaad hai? LIKE detective bulao 🕵️ | SQL Hindi #17 #shorts,"Naam ka sirf 'A' yaad hai? LIKE detective bulao 🕵️
+
+📌 SQL Series Part 17: LIKE aur Wildcards  (Filtering)
+
+Is Short mein seekho:
+✅ LIKE = pattern search
+✅ % = kuch bhi, _ = ek char
+✅ 'A%' shuru, '%a' khatam
+✅ Bina % → = jaisa hi
+
+💻 Example query:
+SELECT name
+FROM employees
+WHERE name LIKE 'A%';
+
+❌ Common mistake: WHERE name LIKE 'A'
+✔️ Sahi tareeka: WHERE name LIKE 'A%'
+💡 Kyun: Bina % ke LIKE = exact match, bilkul = jaisa. 'A' naam ka koi nahi → 0 rows 😶
+
+➡️ Next video: IS NULL
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: LIKE aur Wildcards, LIKE aur Wildcards in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #likeaurwildcards #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #like #wildcards #search #sqltutorial #sqlinterview","like aur wildcards, like aur wildcards in sql, sql like aur wildcards, like aur wildcards sql in hindi, like aur wildcards sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, like, wildcards, search, sql filtering, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database"
+SQL018,"IS NULL | NULL zero nahi hota, ye baat dil pe likh lo ✍️ | SQL Hindi #18 #shorts","NULL zero nahi hota, ye baat dil pe likh lo ✍️
+
+📌 SQL Series Part 18: IS NULL  (Filtering)
+
+Is Short mein seekho:
+✅ NULL = missing value
+✅ NULL ≠ 0 ≠ ''
+✅ = NULL kaam nahi karta
+✅ Use IS NULL / IS NOT NULL
+
+💻 Example query:
+SELECT name
+FROM employees
+WHERE manager_id IS NULL;
+
+❌ Common mistake: WHERE manager_id = NULL
+✔️ Sahi tareeka: WHERE manager_id IS NULL
+💡 Kyun: = NULL hamesha UNKNOWN deta hai, error nahi. Bas 0 rows, chupchaap 😶
+
+➡️ Next video: ORDER BY
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: IS NULL, IS NULL in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #isnull #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #null #sqltips #sqltutorial #sqlinterview #mysql","is null, is null in sql, sql is null, is null sql in hindi, is null sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, null, isnull, sqltips, sql filtering, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, data analytics, data engineer"
+SQL019,ORDER BY | Salary ke hisaab se line mein lag jao sab 📶 | SQL Hindi #19 #shorts,"Salary ke hisaab se line mein lag jao sab 📶
+
+📌 SQL Series Part 19: ORDER BY  (Sorting & Limit)
+
+Is Short mein seekho:
+✅ ORDER BY col = sort
+✅ ASC default, DESC ulta
+✅ Multi: dept, salary DESC
+✅ WHERE ke baad aata hai
+
+💻 Example query:
+SELECT name, salary
+FROM employees
+ORDER BY salary DESC;
+
+❌ Common mistake: SELECT name FROM employees ORDER BY salary WHERE city = 'Delhi';
+✔️ Sahi tareeka: SELECT name FROM employees WHERE city = 'Delhi' ORDER BY salary;
+💡 Kyun: Pehle filter (WHERE), phir sort (ORDER BY). Ulta = syntax error ❌
+
+➡️ Next video: LIMIT / TOP
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: ORDER BY, ORDER BY in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #orderby #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #sorting #sqlbasics #sqltutorial #sqlinterview #mysql","order by, order by in sql, sql order by, order by sql in hindi, order by sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, orderby, sorting, sqlbasics, sql sorting & limit, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, data analytics"
+SQL020,LIMIT / TOP | Top 3 kaun? LIMIT bolega baaki ghar jao 🏆 | SQL Hindi #20 #shorts,"Top 3 kaun? LIMIT bolega baaki ghar jao 🏆
+
+📌 SQL Series Part 20: LIMIT / TOP  (Sorting & Limit)
+
+Is Short mein seekho:
+✅ LIMIT n = pehli n rows
+✅ Hamesha ORDER BY ke saath
+✅ SQL Server: SELECT TOP n
+✅ OFFSET = rows skip, pagination
+
+💻 Example query:
+SELECT name, salary
+FROM employees
+ORDER BY salary DESC
+LIMIT 3;
+
+❌ Common mistake: SELECT name, salary FROM employees LIMIT 3;
+✔️ Sahi tareeka: SELECT name, salary FROM employees ORDER BY salary DESC LIMIT 3;
+💡 Kyun: Bina ORDER BY ke LIMIT = koi bhi 3 rows. Top 3 ki guarantee zero 🎲
+
+➡️ Next video: COUNT()
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: LIMIT / TOP, LIMIT / TOP in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #limittop #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #limit #top #sqltips #sqltutorial #sqlinterview","limit top, limit top in sql, sql limit top, limit top sql in hindi, limit top sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, limit, top, sqltips, sql sorting & limit, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, data analytics"
+SQL021,COUNT() | Kitne log Delhi mein? COUNT ginti mein topper hai 🔢 | SQL Hindi #21 #shorts,"Kitne log Delhi mein? COUNT ginti mein topper hai 🔢
+
+📌 SQL Series Part 21: COUNT()  (Aggregate Functions)
+
+Is Short mein seekho:
+✅ COUNT(*) = saari rows
+✅ COUNT(col) = non-NULL values
+✅ COUNT(DISTINCT col) = unique
+✅ Result hamesha ek number
+
+💻 Example query:
+SELECT COUNT(*)
+FROM employees
+WHERE city = 'Delhi';
+-- Result: 3
+
+❌ Common mistake: COUNT(bonus) aur COUNT(*) same hain
+✔️ Sahi tareeka: COUNT(*) = saari rows, COUNT(bonus) = sirf non-NULL
+💡 Kyun: Bonus NULL wale skip → 5 ki jagah 3. Report galat 📉
+
+➡️ Next video: SUM() aur AVG()
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: COUNT(), COUNT() in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #count #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #aggregate #sqlbasics #sqltutorial #sqlinterview #mysql","count(), count() in sql, sql count(), count() sql in hindi, count() sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, count, aggregate, sqlbasics, sql aggregate functions, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, data analytics"
+SQL022,SUM() aur AVG() | Company kitni salary baant rahi hai? SUM aur AVG se poochho 🧮 #shorts,"Company kitni salary baant rahi hai? SUM aur AVG se poochho 🧮
+
+📌 SQL Series Part 22: SUM() aur AVG()  (Aggregate Functions)
+
+Is Short mein seekho:
+✅ SUM = total, AVG = average
+✅ Sirf numeric columns pe
+✅ NULL ko dono ignore karte
+✅ NULL = 0 chahiye? COALESCE
+
+💻 Example query:
+SELECT
+  SUM(salary) AS total,
+  AVG(salary) AS average
+FROM employees;
+
+❌ Common mistake: AVG mein NULL ko 0 maan lena (÷5)
+✔️ Sahi tareeka: AVG NULL ko skip karta hai (÷4)
+💡 Kyun: 0 chahiye to khud bolo: COALESCE(salary, 0)
+
+➡️ Next video: MIN() aur MAX()
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: SUM() aur AVG(), SUM() aur AVG() in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #sumauravg #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #sum #avg #aggregate #sqltutorial #sqlinterview","sum() aur avg(), sum() aur avg() in sql, sql sum() aur avg(), sum() aur avg() sql in hindi, sum() aur avg() sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, sum, avg, aggregate, sql aggregate functions, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms"
+SQL023,"MIN() aur MAX() | Sabse ameer aur sabse gareeb, MAX aur MIN ne expose kar diya 👑 #shorts","Sabse ameer aur sabse gareeb, MAX aur MIN ne expose kar diya 👑
+
+📌 SQL Series Part 23: MIN() aur MAX()  (Aggregate Functions)
+
+Is Short mein seekho:
+✅ MAX = sabse bada, MIN = sabse chhota
+✅ Numbers, dates, text sab chalega
+✅ NULL ko ignore karte hain
+✅ Naam chahiye? subquery lagao
+
+💻 Example query:
+SELECT
+  MAX(salary) AS highest,
+  MIN(salary) AS lowest
+FROM employees;
+
+❌ Common mistake: SELECT name, MAX(salary) FROM employees;
+✔️ Sahi tareeka: SELECT name, salary FROM employees WHERE salary = (SELECT MAX(salary) FROM employees);
+💡 Kyun: PostgreSQL/SQL Server: error. Purana MySQL: koi bhi random naam 💀
+
+➡️ Next video: GROUP BY
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: MIN() aur MAX(), MIN() aur MAX() in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #minaurmax #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #max #min #aggregate #sqltutorial #sqlinterview","min() aur max(), min() aur max() in sql, sql min() aur max(), min() aur max() sql in hindi, min() aur max() sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, max, min, aggregate, sql aggregate functions, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms"
+SQL024,GROUP BY | Department wise gossip: GROUP BY 🗂️ | SQL Hindi #24 #shorts,"Department wise gossip: GROUP BY 🗂️
+
+📌 SQL Series Part 24: GROUP BY  (Aggregate Functions)
+
+Is Short mein seekho:
+✅ Same value → ek group
+✅ Har group pe aggregate
+✅ SELECT = group col + aggregates
+✅ Ek group = ek row
+
+💻 Example query:
+SELECT dept,
+  COUNT(*) AS people,
+  AVG(salary) AS avg_salary
+FROM employees
+GROUP BY dept;
+
+❌ Common mistake: SELECT dept, name, COUNT(*) FROM employees GROUP BY dept;
+✔️ Sahi tareeka: SELECT dept, COUNT(*) FROM employees GROUP BY dept;
+💡 Kyun: name GROUP BY mein nahi → PostgreSQL/SQL Server error, MySQL (strict mode) bhi
+
+➡️ Next video: HAVING
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: GROUP BY, GROUP BY in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #groupby #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #aggregate #dataanalysis #sqltutorial #sqlinterview #mysql","group by, group by in sql, sql group by, group by sql in hindi, group by sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, groupby, aggregate, dataanalysis, sql aggregate functions, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, shorts"
+SQL025,"HAVING | WHERE groups pe nahi chalta, HAVING ko bulao 🚪 | SQL Hindi #25 #shorts","WHERE groups pe nahi chalta, HAVING ko bulao 🚪
+
+📌 SQL Series Part 25: HAVING  (Aggregate Functions)
+
+Is Short mein seekho:
+✅ HAVING = groups ka filter
+✅ Hamesha GROUP BY ke baad
+✅ Aggregates ke saath chalta
+✅ WHERE rows, HAVING groups
+
+💻 Example query:
+SELECT dept,
+  COUNT(*) AS people
+FROM employees
+GROUP BY dept
+HAVING COUNT(*) › 1;
+
+❌ Common mistake: SELECT dept, COUNT(*) FROM employees WHERE COUNT(*) › 1 GROUP BY dept;
+✔️ Sahi tareeka: SELECT dept, COUNT(*) FROM employees GROUP BY dept HAVING COUNT(*) › 1;
+💡 Kyun: WHERE ke time groups bane hi nahi, COUNT kiska? → error
+
+➡️ Next video: WHERE vs HAVING
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: HAVING, HAVING in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #having #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #groupby #sqltips #sqltutorial #sqlinterview #mysql","having, having in sql, sql having, having sql in hindi, having sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, groupby, sqltips, sql aggregate functions, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, data analytics, data engineer"
+SQL026,WHERE vs HAVING | WHERE vs HAVING: interviewer ka favourite jaal 🪤 | SQL Hindi #26 #shorts,"WHERE vs HAVING: interviewer ka favourite jaal 🪤
+
+📌 SQL Series Part 26: WHERE vs HAVING  (Aggregate Functions)
+
+Is Short mein seekho:
+✅ WHERE → rows, pehle
+✅ HAVING → groups, baad mein
+✅ WHERE mein aggregate nahi
+✅ Order: WHERE → GROUP BY → HAVING
+
+💻 Example query:
+SELECT dept, AVG(salary)
+FROM employees
+WHERE city = 'Delhi'
+GROUP BY dept
+HAVING AVG(salary) › 55000;
+
+❌ Common mistake: WHERE aur HAVING ko interchangeable samajhna
+✔️ Sahi tareeka: WHERE = rows, pehle. HAVING = groups, baad mein
+💡 Kyun: WHERE AVG(salary) › 55000 → error. Aggregate sirf HAVING mein
+
+➡️ Next video: UPDATE
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: WHERE vs HAVING, WHERE vs HAVING in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #wherevshaving #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #sqlinterview #sqltips #sqltutorial #mysql #postgresql","where vs having, where vs having in sql, sql where vs having, where vs having sql in hindi, where vs having sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, wherevshaving, sqlinterview, sqltips, sql aggregate functions, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, dbms"
+SQL027,UPDATE | Ek WHERE bhoola aur sabki salary same ho gayi 😱 | SQL Hindi #27 #shorts,"Ek WHERE bhoola aur sabki salary same ho gayi 😱
+
+📌 SQL Series Part 27: UPDATE  (Modify Data)
+
+Is Short mein seekho:
+✅ UPDATE table SET col = value
+✅ WHERE = kis row ko badalna
+✅ Bina WHERE = saari rows
+✅ Pehle SELECT se check karo
+
+💻 Example query:
+UPDATE employees
+SET salary = 65000
+WHERE id = 1;
+
+❌ Common mistake: UPDATE employees SET salary = 65000;
+✔️ Sahi tareeka: UPDATE employees SET salary = 65000 WHERE id = 1;
+💡 Kyun: WHERE bhoola = poori company ki salary 65,000 😭
+
+➡️ Next video: DELETE
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: UPDATE, UPDATE in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #update #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #dml #sqltips #sqltutorial #sqlinterview #mysql","update, update in sql, sql update, update sql in hindi, update sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, dml, sqltips, sql modify data, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, data analytics, data engineer, sql course"
+SQL028,DELETE | DELETE bina WHERE ke = naukri bhi delete 💀 | SQL Hindi #28 #shorts,"DELETE bina WHERE ke = naukri bhi delete 💀
+
+📌 SQL Series Part 28: DELETE  (Modify Data)
+
+Is Short mein seekho:
+✅ DELETE FROM table WHERE ...
+✅ Bina WHERE = saari rows gone
+✅ Structure bacha rehta hai
+✅ Pehle SELECT, phir DELETE
+
+💻 Example query:
+DELETE FROM employees
+WHERE id = 5;
+
+❌ Common mistake: DELETE FROM employees;
+✔️ Sahi tareeka: DELETE FROM employees WHERE id = 5;
+💡 Kyun: Production mein bina WHERE = poori table khaali. Naukri bhi 💀
+
+➡️ Next video: DELETE vs TRUNCATE vs DROP
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: DELETE, DELETE in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #delete #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #dml #sqlbasics #sqltutorial #sqlinterview #mysql","delete, delete in sql, sql delete, delete sql in hindi, delete sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, dml, sqlbasics, sql modify data, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, data analytics, data engineer, sql course"
+SQL029,"DELETE vs TRUNCATE vs DROP | DELETE, TRUNCATE, DROP: teeno bhai, teeno khatarnaak 💣 #shorts","DELETE, TRUNCATE, DROP: teeno bhai, teeno khatarnaak 💣
+
+📌 SQL Series Part 29: DELETE vs TRUNCATE vs DROP  (Modify Data)
+
+Is Short mein seekho:
+✅ DELETE = kuch rows, WHERE ke saath
+✅ TRUNCATE = saari rows, fast
+✅ DROP = table hi khatam
+✅ DELETE DML, TRUNCATE/DROP DDL
+
+💻 Example query:
+DELETE FROM employees
+WHERE id = 5;
+
+TRUNCATE TABLE employees;
+
+DROP TABLE employees;
+
+❌ Common mistake: TRUNCATE TABLE employees WHERE id = 5;
+✔️ Sahi tareeka: DELETE FROM employees WHERE id = 5;
+💡 Kyun: TRUNCATE WHERE nahi leta. Chuni rows hatani hain? DELETE
+
+➡️ Next video: ALTER TABLE
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: DELETE vs TRUNCATE vs DROP, DELETE vs TRUNCATE vs DROP in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #truncate #drop #sqlinterview #sqltutorial #mysql #postgresql","delete vs truncate vs drop, delete vs truncate vs drop in sql, sql delete vs truncate vs drop, delete vs truncate vs drop sql in hindi, delete vs truncate vs drop sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, truncate, drop, sqlinterview, sql modify data, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, mysql"
+SQL030,"ALTER TABLE | Table ban gayi, ab email column bhool gaye? ALTER hai na 🛠️ | SQL Hindi #30 #shorts","Table ban gayi, ab email column bhool gaye? ALTER hai na 🛠️
+
+📌 SQL Series Part 30: ALTER TABLE  (Modify Data)
+
+Is Short mein seekho:
+✅ ALTER TABLE = structure badlo
+✅ ADD, DROP COLUMN, RENAME
+✅ Data safe, naya column NULL
+✅ NOT NULL add? DEFAULT do
+
+💻 Example query:
+ALTER TABLE employees
+ADD email VARCHAR(100);
+
+❌ Common mistake: ALTER TABLE employees ADD phone VARCHAR(15) NOT NULL;
+✔️ Sahi tareeka: ALTER TABLE employees ADD phone VARCHAR(15) NOT NULL DEFAULT 'NA';
+💡 Kyun: Purani rows mein value kya ho? Postgres/SQL Server error. DEFAULT do
+
+➡️ Next video: NOT NULL, UNIQUE, DEFAULT
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: ALTER TABLE, ALTER TABLE in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #altertable #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #ddl #sqlbasics #sqltutorial #sqlinterview #mysql","alter table, alter table in sql, sql alter table, alter table sql in hindi, alter table sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, altertable, ddl, sqlbasics, sql modify data, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, shorts"
+SQL031,"NOT NULL, UNIQUE, DEFAULT | Data ke bouncers: NOT NULL, UNIQUE, DEFAULT 🛡️ | SQL Hindi #31 #shorts","Data ke bouncers: NOT NULL, UNIQUE, DEFAULT 🛡️
+
+📌 SQL Series Part 31: NOT NULL, UNIQUE, DEFAULT  (Constraints)
+
+Is Short mein seekho:
+✅ NOT NULL = khaali nahi
+✅ UNIQUE = repeat nahi
+✅ DEFAULT = auto value, CHECK = condition
+✅ PK = UNIQUE + NOT NULL, sirf ek
+
+💻 Example query:
+CREATE TABLE users (
+  id INT PRIMARY KEY,
+  email VARCHAR(100)
+    UNIQUE NOT NULL,
+  country VARCHAR(20)
+    DEFAULT 'India'
+);
+
+❌ Common mistake: UNIQUE aur PRIMARY KEY ko same samajhna
+✔️ Sahi tareeka: PK = UNIQUE + NOT NULL, aur table mein sirf ek
+💡 Kyun: UNIQUE kai columns pe laga sakte ho, aur woh NULL le sakta hai
+
+➡️ Next video: Foreign Key
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: NOT NULL, UNIQUE, DEFAULT, NOT NULL, UNIQUE, DEFAULT in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #notnulluniquedefault #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #constraints #unique #notnull #sqltutorial #sqlinterview","not null unique default, not null unique default in sql, sql not null unique default, not null unique default sql in hindi, not null unique default sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, constraints, unique, notnull, sql constraints, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, dbms"
+SQL032,Foreign Key | Do tables ki dosti ka dhaaga: Foreign Key 🔗 | SQL Hindi #32 #shorts,"Do tables ki dosti ka dhaaga: Foreign Key 🔗
+
+📌 SQL Series Part 32: Foreign Key  (Constraints)
+
+Is Short mein seekho:
+✅ FK = doosri table ka reference
+✅ Child → Parent rishta
+✅ Galat value block
+✅ Parent delete? CASCADE ya pehle child
+
+💻 Example query:
+CREATE TABLE orders (
+  order_id INT PRIMARY KEY,
+  customer_id INT,
+  amount INT,
+  FOREIGN KEY (customer_id)
+    REFERENCES customers(id)
+);
+
+❌ Common mistake: DELETE FROM customers WHERE id = 1;
+✔️ Sahi tareeka: DELETE FROM orders WHERE customer_id = 1; DELETE FROM customers WHERE id = 1;
+💡 Kyun: Aarav ke orders abhi bache hain → FK error. Pehle child, phir parent
+
+➡️ Next video: Joins kyun chahiye?
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Foreign Key, Foreign Key in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #foreignkey #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #relationships #sqlbasics #sqltutorial #sqlinterview #mysql","foreign key, foreign key in sql, sql foreign key, foreign key sql in hindi, foreign key sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, foreignkey, relationships, sqlbasics, sql constraints, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, sql course"
+SQL033,"Joins kyun chahiye? | Data do jagah, answer ek jagah: JOIN ka jaadu 🪄 | SQL Hindi #33 #shorts","Data do jagah, answer ek jagah: JOIN ka jaadu 🪄
+
+📌 SQL Series Part 33: Joins kyun chahiye?  (Joins)
+
+Is Short mein seekho:
+✅ Data alag tables mein rehta hai
+✅ Common column = jodne ki key
+✅ JOIN + ON = tables jodo
+✅ 4 types: INNER, LEFT, RIGHT, FULL
+
+💻 Example query:
+SELECT *
+FROM customers
+JOIN orders
+  ON customers.id =
+     orders.customer_id;
+
+❌ Common mistake: SELECT * FROM customers JOIN orders;
+✔️ Sahi tareeka: SELECT * FROM customers JOIN orders ON customers.id = orders.customer_id;
+💡 Kyun: ON bhoole: PostgreSQL error, MySQL har row × har row jod deta 💥
+
+➡️ Next video: INNER JOIN
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Joins kyun chahiye?, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #joinskyunchahiye #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #joins #sqljoins #sqlbasics #sqltutorial #sqlinterview","joins kyun chahiye, joins kyun chahiye sql, joins kyun chahiye in hindi, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, joins, sqljoins, sqlbasics, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, data analytics, data engineer, sql course, sql full course"
+SQL034,"INNER JOIN | INNER JOIN: sirf jo dono taraf match ho, baaki single 💑 | SQL Hindi #34 #shorts","INNER JOIN: sirf jo dono taraf match ho, baaki single 💑
+
+📌 SQL Series Part 34: INNER JOIN  (Joins)
+
+Is Short mein seekho:
+✅ INNER JOIN = sirf match
+✅ Unmatched dono taraf gayab
+✅ Venn ka beech wala hissa
+✅ JOIN = INNER JOIN
+
+💻 Example query:
+SELECT c.name, o.amount
+FROM customers c
+INNER JOIN orders o
+  ON c.id = o.customer_id;
+
+❌ Common mistake: INNER JOIN se saare customers aane ki ummeed
+✔️ Sahi tareeka: INNER JOIN = sirf match wale. Sab chahiye? LEFT JOIN
+💡 Kyun: Kabir, Riya ka order nahi → INNER JOIN mein dikhenge hi nahi
+
+➡️ Next video: LEFT JOIN
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: INNER JOIN, INNER JOIN in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #innerjoin #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #joins #sqlinterview #sqltutorial #mysql #postgresql","inner join, inner join in sql, sql inner join, inner join sql in hindi, inner join sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, innerjoin, joins, sqlinterview, sql joins, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, sql course"
+SQL035,LEFT JOIN | LEFT JOIN: koi customer peeche nahi chhootega 🫂 | SQL Hindi #35 #shorts,"LEFT JOIN: koi customer peeche nahi chhootega 🫂
+
+📌 SQL Series Part 35: LEFT JOIN  (Joins)
+
+Is Short mein seekho:
+✅ LEFT JOIN = left ki saari rows
+✅ No match → right side NULL
+✅ IS NULL = jinka match nahi
+✅ Right filter? ON mein daalo
+
+💻 Example query:
+SELECT c.name, o.amount
+FROM customers c
+LEFT JOIN orders o
+  ON c.id = o.customer_id;
+
+❌ Common mistake: LEFT JOIN orders o ON c.id = o.customer_id WHERE o.amount › 400;
+✔️ Sahi tareeka: LEFT JOIN orders o ON c.id = o.customer_id AND o.amount › 400;
+💡 Kyun: WHERE NULL rows hata deta → LEFT JOIN chupke se INNER ban gaya
+
+➡️ Next video: RIGHT JOIN
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: LEFT JOIN, LEFT JOIN in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #leftjoin #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #joins #sqlinterview #sqltutorial #mysql #postgresql","left join, left join in sql, sql left join, left join sql in hindi, left join sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, leftjoin, joins, sqlinterview, sql joins, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, data analytics"
+SQL036,"RIGHT JOIN | RIGHT JOIN: LEFT ka ulta, par log fir bhi LEFT hi likhte hain 🙃 | SQL Hindi #36 #shorts","RIGHT JOIN: LEFT ka ulta, par log fir bhi LEFT hi likhte hain 🙃
+
+📌 SQL Series Part 36: RIGHT JOIN  (Joins)
+
+Is Short mein seekho:
+✅ RIGHT JOIN = right ki saari rows
+✅ No match → left side NULL
+✅ Tables swap = LEFT JOIN
+✅ Purane SQLite mein support nahi
+
+💻 Example query:
+SELECT c.name,
+  o.order_id, o.amount
+FROM customers c
+RIGHT JOIN orders o
+  ON c.id = o.customer_id;
+
+❌ Common mistake: Socha customers ki saari rows aayengi (FROM customers RIGHT JOIN orders)
+✔️ Sahi tareeka: RIGHT JOIN = JOIN ke baad wali table (orders) ki saari rows
+💡 Kyun: LEFT/RIGHT = likhne ka order, table ka naam nahi
+
+➡️ Next video: FULL OUTER JOIN
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: RIGHT JOIN, RIGHT JOIN in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #rightjoin #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #joins #sqlbasics #sqltutorial #sqlinterview #mysql","right join, right join in sql, sql right join, right join sql in hindi, right join sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, rightjoin, joins, sqlbasics, sql joins, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, data analytics"
+SQL037,"FULL OUTER JOIN | FULL OUTER JOIN: sabko bulao, koi naraz na ho 🎉 | SQL Hindi #37 #shorts","FULL OUTER JOIN: sabko bulao, koi naraz na ho 🎉
+
+📌 SQL Series Part 37: FULL OUTER JOIN  (Joins)
+
+Is Short mein seekho:
+✅ FULL JOIN = dono ki saari rows
+✅ Unmatched → doosri side NULL
+✅ Venn ke dono circles poore
+✅ MySQL: LEFT UNION RIGHT
+
+💻 Example query:
+SELECT c.name, o.order_id
+FROM customers c
+FULL OUTER JOIN orders o
+  ON c.id = o.customer_id;
+
+❌ Common mistake: MySQL mein FULL OUTER JOIN orders o ...
+✔️ Sahi tareeka: MySQL mein: LEFT JOIN ... UNION RIGHT JOIN ...
+💡 Kyun: MySQL FULL OUTER JOIN support nahi karta → syntax error
+
+➡️ Next video: SELF JOIN
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: FULL OUTER JOIN, FULL OUTER JOIN in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #fullouterjoin #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #joins #sqlinterview #sqltutorial #mysql #postgresql","full outer join, full outer join in sql, sql full outer join, full outer join sql in hindi, full outer join sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, fullouterjoin, joins, sqlinterview, sql joins, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms"
+SQL038,"SELF JOIN | Table khud se hi join? Haan, boss dhundhne ke liye 👔 | SQL Hindi #38 #shorts","Table khud se hi join? Haan, boss dhundhne ke liye 👔
+
+📌 SQL Series Part 38: SELF JOIN  (Joins)
+
+Is Short mein seekho:
+✅ SELF JOIN = table khud se
+✅ Do aliases zaroori (e, m)
+✅ Hierarchy: employee → manager
+✅ Top boss chahiye? LEFT JOIN
+
+💻 Example query:
+SELECT e.name AS employee,
+       m.name AS manager
+FROM employees e
+LEFT JOIN employees m
+  ON e.manager_id = m.id;
+
+❌ Common mistake: SELECT name, name FROM employees JOIN employees ON manager_id = id;
+✔️ Sahi tareeka: SELECT e.name, m.name FROM employees e JOIN employees m ON e.manager_id = m.id;
+💡 Kyun: Alias nahi to SQL confuse: kaunsi copy ka name? → error
+
+➡️ Next video: UNION vs UNION ALL
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: SELF JOIN, SELF JOIN in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #selfjoin #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #joins #sqlinterview #sqltutorial #mysql #postgresql","self join, self join in sql, sql self join, self join sql in hindi, self join sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, selfjoin, joins, sqlinterview, sql joins, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, data analytics"
+SQL039,UNION vs UNION ALL | UNION vs UNION ALL: ek duplicate se nafrat karta hai 🙅 | SQL Hindi #39 #shorts,"UNION vs UNION ALL: ek duplicate se nafrat karta hai 🙅
+
+📌 SQL Series Part 39: UNION vs UNION ALL  (Joins)
+
+Is Short mein seekho:
+✅ UNION = rows upar-neeche
+✅ UNION duplicates hatata hai
+✅ UNION ALL sab rakhta, fast
+✅ Columns: same count + type
+
+💻 Example query:
+SELECT city FROM employees
+WHERE dept = 'IT'
+UNION
+SELECT city FROM employees
+WHERE dept = 'Sales';
+
+❌ Common mistake: SELECT name, city FROM customers UNION SELECT name FROM employees;
+✔️ Sahi tareeka: SELECT name, city FROM customers UNION SELECT name, city FROM employees;
+💡 Kyun: 2 columns vs 1 column → error. Count aur type same rakho
+
+➡️ Next video: Subquery
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: UNION vs UNION ALL, UNION vs UNION ALL in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #unionvsunionall #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #union #unionall #sqltips #sqltutorial #sqlinterview","union vs union all, union vs union all in sql, sql union vs union all, union vs union all sql in hindi, union vs union all sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, union, unionall, sqltips, sql joins, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms"
+SQL040,Subquery | Query ke andar query: SQL ka Inception 🌀 | SQL Hindi #40 #shorts,"Query ke andar query: SQL ka Inception 🌀
+
+📌 SQL Series Part 40: Subquery  (Advanced Basics)
+
+Is Short mein seekho:
+✅ Subquery = query ke andar query
+✅ ( ) mein, andar wali pehle
+✅ WHERE, FROM, SELECT mein chalti
+✅ Kai rows? = nahi, IN
+
+💻 Example query:
+SELECT name, salary
+FROM employees
+WHERE salary › (
+  SELECT AVG(salary)
+  FROM employees
+);
+
+❌ Common mistake: WHERE id = ( SELECT customer_id FROM orders );
+✔️ Sahi tareeka: WHERE id IN ( SELECT customer_id FROM orders );
+💡 Kyun: Subquery ne kai rows di aur = laga → ""more than one row"" error
+
+➡️ Next video: CASE WHEN
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Subquery, Subquery in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #subquery #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #nestedquery #sqlinterview #sqltutorial #mysql #postgresql","subquery, subquery in sql, sql subquery, subquery sql in hindi, subquery sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, nestedquery, sqlinterview, sql advanced basics, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, data analytics"
+SQL041,CASE WHEN | SQL mein if-else? CASE WHEN bolta hai 'main hoon na' 🤝 | SQL Hindi #41 #shorts,"SQL mein if-else? CASE WHEN bolta hai 'main hoon na' 🤝
+
+📌 SQL Series Part 41: CASE WHEN  (Advanced Basics)
+
+Is Short mein seekho:
+✅ CASE WHEN cond THEN val
+✅ ELSE = default, warna NULL
+✅ END se band, hamesha
+✅ Pehli true condition jeetti hai
+
+💻 Example query:
+SELECT name, salary,
+  CASE
+    WHEN salary › 70000 THEN 'High'
+    WHEN salary ›= 50000 THEN 'Mid'
+    ELSE 'Low'
+  END AS band
+FROM employees;
+
+❌ Common mistake: CASE WHEN salary › 70000 THEN 'High' ELSE 'Low' AS band
+✔️ Sahi tareeka: CASE WHEN salary › 70000 THEN 'High' ELSE 'Low' END AS band
+💡 Kyun: END bhoole = syntax error. CASE khola hai to band bhi karo
+
+➡️ Next video: String Functions
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: CASE WHEN, CASE WHEN in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #casewhen #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #ifelse #sqltips #sqltutorial #sqlinterview #mysql","case when, case when in sql, sql case when, case when sql in hindi, case when sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, casewhen, ifelse, sqltips, sql advanced basics, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, sql course"
+SQL042,"String Functions | Naam ko CAPITAL kar do, lamba naap lo, jod do: text ka jaadu ✨ #shorts","Naam ko CAPITAL kar do, lamba naap lo, jod do: text ka jaadu ✨
+
+📌 SQL Series Part 42: String Functions  (Advanced Basics)
+
+Is Short mein seekho:
+✅ UPPER / LOWER = case badlo
+✅ LENGTH (SQL Server: LEN)
+✅ CONCAT jodta, TRIM saaf karta
+✅ Naam DB ke hisaab se check karo
+
+💻 Example query:
+SELECT
+  UPPER(name) AS caps,
+  LENGTH(name) AS letters,
+  CONCAT(name, ' - ', city)
+    AS label
+FROM employees;
+
+❌ Common mistake: SQL Server mein bhi LENGTH(name) likh diya
+✔️ Sahi tareeka: SQL Server = LEN(name), MySQL/Postgres = LENGTH(name)
+💡 Kyun: Function ke naam har DB mein same nahi. Error aaye to docs dekho 📖
+
+➡️ Next video: Date Functions
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: String Functions, String Functions in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #stringfunctions #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #concat #sqltips #sqltutorial #sqlinterview #mysql","string functions, string functions in sql, sql string functions, string functions sql in hindi, string functions sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, stringfunctions, concat, sqltips, sql advanced basics, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, dbms"
+SQL043,Date Functions | Aaj ki date se bachpan ki date tak: Date functions 📅 | SQL Hindi #43 #shorts,"Aaj ki date se bachpan ki date tak: Date functions 📅
+
+📌 SQL Series Part 43: Date Functions  (Advanced Basics)
+
+Is Short mein seekho:
+✅ Aaj: CURRENT_DATE / GETDATE()
+✅ Saal: YEAR() ya EXTRACT
+✅ Farq: DATEDIFF (syntax DB-wise)
+✅ Format hamesha YYYY-MM-DD
+
+💻 Example query:
+SELECT order_id, order_date,
+  YEAR(order_date) AS yr
+FROM orders
+WHERE order_date
+  ›= '2025-01-01';
+
+❌ Common mistake: WHERE order_date › '01-02-2025'
+✔️ Sahi tareeka: WHERE order_date › '2025-02-01'
+💡 Kyun: Text jaisa format = galat comparison. YYYY-MM-DD hi safe hai 📅
+
+➡️ Next video: Query Execution Order
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Date Functions, Date Functions in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #datefunctions #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #dates #sqltips #sqltutorial #sqlinterview #mysql","date functions, date functions in sql, sql date functions, date functions sql in hindi, date functions sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, datefunctions, dates, sqltips, sql advanced basics, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms"
+SQL044,"Query Execution Order | Tum SELECT pehle likhte ho, SQL usse pehle padhta hi nahi 🤯 #shorts","Tum SELECT pehle likhte ho, SQL usse pehle padhta hi nahi 🤯
+
+📌 SQL Series Part 44: Query Execution Order  (Advanced Basics)
+
+Is Short mein seekho:
+✅ FROM → WHERE → GROUP BY
+✅ HAVING → SELECT
+✅ ORDER BY → LIMIT
+✅ WHERE mein alias nahi chalega
+
+💻 Example query:
+SELECT dept, COUNT(*)
+FROM employees
+WHERE salary › 40000
+GROUP BY dept
+HAVING COUNT(*) › 1
+ORDER BY 2 DESC
+LIMIT 2;
+
+❌ Common mistake: SELECT salary * 12 AS yearly FROM employees WHERE yearly › 500000;
+✔️ Sahi tareeka: SELECT salary * 12 AS yearly FROM employees WHERE salary * 12 › 500000;
+💡 Kyun: WHERE (step 2) chala tab alias bana hi nahi tha (SELECT step 5) 💀
+
+➡️ Next video: VIEW
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Query Execution Order, Query Execution Order in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #queryexecutionorder #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #executionorder #sqlinterview #sqltips #sqltutorial #mysql","query execution order, query execution order in sql, sql query execution order, query execution order sql in hindi, query execution order sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, executionorder, sqlinterview, sqltips, sql advanced basics, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql"
+SQL045,"VIEW | Lambi query baar baar likhte ho? VIEW bana lo, aalsi bano 😴 | SQL Hindi #45 #shorts","Lambi query baar baar likhte ho? VIEW bana lo, aalsi bano 😴
+
+📌 SQL Series Part 45: VIEW  (Advanced Basics)
+
+Is Short mein seekho:
+✅ VIEW = saved query, virtual table
+✅ Data store nahi karta
+✅ Simple + secure queries
+✅ Table badla → view auto updated
+
+💻 Example query:
+CREATE VIEW it_team AS
+SELECT name, salary
+FROM employees
+WHERE dept = 'IT';
+
+SELECT * FROM it_team;
+
+❌ Common mistake: View = data ki alag copy, table badla to view purana rahega
+✔️ Sahi tareeka: View = window. Table badla to view mein turant dikhega
+💡 Kyun: View sirf saved query hai, har baar table se fresh data laata hai 🪟
+
+➡️ Next video: INDEX
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: VIEW, VIEW in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #view #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #sqlviews #sqltips #sqltutorial #sqlinterview #mysql","view, view in sql, sql view, view sql in hindi, view sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, sqlviews, sqltips, sql advanced basics, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, data analytics, data engineer, sql course"
+SQL046,INDEX | Query 100x fast karni hai? INDEX ka shortcut 🚀 | SQL Hindi #46 #shorts,"Query 100x fast karni hai? INDEX ka shortcut 🚀
+
+📌 SQL Series Part 46: INDEX  (Advanced Basics)
+
+Is Short mein seekho:
+✅ INDEX = book ka index
+✅ CREATE INDEX idx ON t(col)
+✅ WHERE/JOIN columns pe lagao
+✅ Zyada index = slow writes
+
+💻 Example query:
+CREATE INDEX idx_city
+ON employees(city);
+
+SELECT name FROM employees
+WHERE city = 'Pune';
+
+❌ Common mistake: Har column pe index bana diya, sab fast ho jayega
+✔️ Sahi tareeka: Sirf WHERE / JOIN / ORDER BY wale columns pe index
+💡 Kyun: Zyada index = slow writes + zyada space. Soch samajh ke lagao ⚖️
+
+➡️ Next video: Second Highest Salary
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: INDEX, INDEX in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #index #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #performance #sqlinterview #sqltutorial #mysql #postgresql","index, index in sql, sql index, index sql in hindi, index sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, performance, sqlinterview, sql advanced basics, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, data analytics, data engineer"
+SQL047,Second Highest Salary | Second highest salary: har interview ka pakka sawaal 🎯 #shorts,"Second highest salary: har interview ka pakka sawaal 🎯
+
+📌 SQL Series Part 47: Second Highest Salary  (Interview Prep)
+
+Is Short mein seekho:
+✅ MAX ‹ MAX subquery
+✅ DISTINCT + LIMIT 1 OFFSET 1
+✅ Nth highest → OFFSET N-1
+✅ DISTINCT bhoole = galat answer
+
+💻 Example query:
+SELECT MAX(salary)
+FROM employees
+WHERE salary ‹ (
+  SELECT MAX(salary)
+  FROM employees
+);
+
+❌ Common mistake: SELECT salary FROM employees ORDER BY salary DESC LIMIT 1 OFFSET 1;
+✔️ Sahi tareeka: SELECT DISTINCT salary FROM employees ORDER BY salary DESC LIMIT 1 OFFSET 1;
+💡 Kyun: DISTINCT bhoole to 90,000 do baar → answer 90,000 (galat!) 💀
+
+➡️ Next video: SQL Basics Recap
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Second Highest Salary, Second Highest Salary in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #secondhighestsalary #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #sqlinterview #sqlquestions #sqltutorial #mysql #postgresql","second highest salary, second highest salary in sql, sql second highest salary, second highest salary sql in hindi, second highest salary sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, sqlinterview, secondhighestsalary, sqlquestions, sql interview prep, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, mysql, dbms"
+SQL048,"SQL Basics Recap | Poori SQL basics 45 second mein, ab koi bahana nahi 🏁 | SQL Hindi #48 #shorts","Poori SQL basics 45 second mein, ab koi bahana nahi 🏁
+
+📌 SQL Series Part 48: SQL Basics Recap  (Interview Prep)
+
+Is Short mein seekho:
+✅ SELECT FROM WHERE ORDER LIMIT
+✅ Aggregates + GROUP BY + HAVING
+✅ JOINs: INNER, LEFT
+✅ INSERT · UPDATE · DELETE
+
+💻 Example query:
+SELECT c.name,
+  SUM(o.amount) AS spent
+FROM customers c
+JOIN orders o
+  ON c.id = o.customer_id
+GROUP BY c.name
+HAVING SUM(o.amount) › 400
+ORDER BY spent DESC LIMIT 5;
+
+❌ Common mistake: Sirf reels dekh ke SQL seekh liya 📱
+✔️ Sahi tareeka: Har topic ke baad khud query likho, galti karo, fix karo
+💡 Kyun: SQL haath se aata hai, aankh se nahi. Roz 15 min practice 💪
+
+➡️ Next video: GROUP BY Multiple Columns
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: SQL Basics Recap, SQL Basics Recap in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #sqlbasicsrecap #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #sqlrecap #sqlinterview #sqltutorial #mysql #postgresql","sql basics recap, sql basics recap in sql, sql sql basics recap, sql basics recap sql in hindi, sql basics recap sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, sqlrecap, sqlinterview, sql interview prep, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms"
+SQL049,GROUP BY Multiple Columns | Ek group se mann nahi bhara? Do columns se group karo 👯 #shorts,"Ek group se mann nahi bhara? Do columns se group karo 👯
+
+📌 SQL Series Part 49: GROUP BY Multiple Columns  (Aggregate Advanced)
+
+Is Short mein seekho:
+✅ GROUP BY col1, col2
+✅ Har unique combo = ek group
+✅ Column order se groups same
+✅ SELECT = grouped cols + aggregates
+
+💻 Example query:
+SELECT dept, city,
+  COUNT(*) AS people
+FROM employees
+GROUP BY dept, city;
+
+❌ Common mistake: SELECT dept, city, name, COUNT(*) FROM employees GROUP BY dept, city;
+✔️ Sahi tareeka: SELECT dept, city, COUNT(*) FROM employees GROUP BY dept, city;
+💡 Kyun: IT-Delhi group mein 2 naam hain. SQL kaunsa dikhaye? 🤷
+
+➡️ Next video: Conditional Aggregation
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: GROUP BY Multiple Columns, GROUP BY Multiple Columns in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #groupby #dataanalysis #sqltips #sqltutorial #sqlinterview #mysql","group by multiple columns, group by multiple columns in sql, sql group by multiple columns, group by multiple columns sql in hindi, group by multiple columns sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, groupby, dataanalysis, sqltips, sql aggregate advanced, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries"
+SQL050,"Conditional Aggregation | Ek query, das counts: SQL ka multitasking 🤹 | SQL Hindi #50 #shorts","Ek query, das counts: SQL ka multitasking 🤹
+
+📌 SQL Series Part 50: Conditional Aggregation  (Aggregate Advanced)
+
+Is Short mein seekho:
+✅ SUM(CASE WHEN ... 1 ELSE 0)
+✅ Ek query = kai metrics
+✅ COUNT(CASE ...) bhi chalta
+✅ SUM ke saath ELSE 0 mat bhoolo
+
+💻 Example query:
+SELECT dept,
+  SUM(CASE WHEN city = 'Delhi'
+      THEN 1 ELSE 0 END)
+    AS delhi_people,
+  COUNT(*) AS total
+FROM employees
+GROUP BY dept;
+
+❌ Common mistake: SUM(CASE WHEN city = 'Delhi' THEN 1 END)
+✔️ Sahi tareeka: SUM(CASE WHEN city = 'Delhi' THEN 1 ELSE 0 END)
+💡 Kyun: Group mein ek bhi match nahi → SUM = NULL, 0 nahi 😵
+
+➡️ Next video: ROLLUP (Subtotal + Grand Total)
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Conditional Aggregation, Conditional Aggregation in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #conditionalaggregation #casewhen #sqltutorial #sqlinterview #mysql #postgresql","conditional aggregation, conditional aggregation in sql, sql conditional aggregation, conditional aggregation sql in hindi, conditional aggregation sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, conditionalaggregation, casewhen, sql aggregate advanced, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, mysql, dbms"
+SQL051,ROLLUP (Subtotal + Grand Total) | Grand total ke liye calculator mat uthao 🧾 | SQL Hindi #51 #shorts,"Grand total ke liye calculator mat uthao 🧾
+
+📌 SQL Series Part 51: ROLLUP (Subtotal + Grand Total)  (Aggregate Advanced)
+
+Is Short mein seekho:
+✅ ROLLUP = subtotals + grand total
+✅ Total row mein dept = NULL
+✅ PG/SQL Server: ROLLUP(dept)
+✅ MySQL: WITH ROLLUP
+
+💻 Example query:
+SELECT dept,
+  SUM(salary) AS total
+FROM employees
+GROUP BY ROLLUP(dept);
+
+❌ Common mistake: -- MySQL GROUP BY ROLLUP(dept);
+✔️ Sahi tareeka: -- MySQL GROUP BY dept WITH ROLLUP;
+💡 Kyun: MySQL ROLLUP(dept) syntax nahi samajhta → error. WITH ROLLUP likho
+
+➡️ Next video: Pivot with CASE
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: ROLLUP (Subtotal + Grand Total), ROLLUP (Subtotal + Grand Total) in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #rollup #groupby #sqlreports #sqltutorial #sqlinterview #mysql","rollup (subtotal grand total), rollup (subtotal grand total) in sql, sql rollup (subtotal grand total), rollup (subtotal grand total) sql in hindi, rollup (subtotal grand total) sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, rollup, groupby, sqlreports, sql aggregate advanced, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers"
+SQL052,"Pivot with CASE | Rows ko 90 degree ghuma do, Excel bhi sharma jaaye 🔄 | SQL Hindi #52 #shorts","Rows ko 90 degree ghuma do, Excel bhi sharma jaaye 🔄
+
+📌 SQL Series Part 52: Pivot with CASE  (Aggregate Advanced)
+
+Is Short mein seekho:
+✅ Pivot = rows → columns
+✅ Har column = SUM(CASE ...)
+✅ GROUP BY se rows banti
+✅ Excel pivot jaisa, ek query mein
+
+💻 Example query:
+SELECT dept,
+ SUM(CASE WHEN city='Delhi'
+   THEN 1 ELSE 0 END) AS delhi,
+ SUM(CASE WHEN city='Mumbai'
+   THEN 1 ELSE 0 END) AS mumbai,
+ SUM(CASE WHEN city='Pune'
+   THEN 1 ELSE 0 END) AS pune
+FROM employees GROUP BY dept;
+
+❌ Common mistake: Har city ke liye alag query: Delhi ki ek, Mumbai ki ek, Pune ki ek
+✔️ Sahi tareeka: Ek query, har city = ek SUM(CASE ...) column
+💡 Kyun: 3 query = 3 baar table scan + jodne ka jhanjhat. Pivot ek baar mein 🔥
+
+➡️ Next video: Window Functions kya hain?
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Pivot with CASE, Pivot with CASE in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #pivotwithcase #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #pivot #casewhen #sqlreports #sqltutorial #sqlinterview","pivot with case, pivot with case in sql, sql pivot with case, pivot with case sql in hindi, pivot with case sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, pivot, casewhen, sqlreports, sql aggregate advanced, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms"
+SQL053,"Window Functions kya hain? | GROUP BY rows kha jaata hai, ye nahi khaata 🪟 | SQL Hindi #53 #shorts","GROUP BY rows kha jaata hai, ye nahi khaata 🪟
+
+📌 SQL Series Part 53: Window Functions kya hain?  (Window Functions)
+
+Is Short mein seekho:
+✅ Window = har row + calculation
+✅ Pehchan: OVER()
+✅ Rows merge nahi hoti
+✅ WHERE mein nahi → subquery
+
+💻 Example query:
+SELECT name, salary,
+  AVG(salary) OVER ()
+    AS company_avg
+FROM employees;
+
+❌ Common mistake: SELECT name FROM employees WHERE salary › AVG(salary) OVER ();
+✔️ Sahi tareeka: SELECT name FROM ( SELECT name, salary, AVG(salary) OVER () AS a FROM employees) t WHERE salary › a;
+💡 Kyun: Window WHERE ke baad chalta hai. Subquery/CTE mein lapeto 📦
+
+➡️ Next video: Aggregate vs Window (PARTITION BY)
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Window Functions kya hain?, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #windowfunctions #over #sqladvanced #sqltutorial #sqlinterview #mysql","window functions kya hain, window functions kya hain sql, window functions kya hain in hindi, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, windowfunctions, over, sqladvanced, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, data analytics, data engineer"
+SQL054,Aggregate vs Window (PARTITION BY) | Naam bhi chahiye aur average bhi? Dono milega 🤝 #shorts,"Naam bhi chahiye aur average bhi? Dono milega 🤝
+
+📌 SQL Series Part 54: Aggregate vs Window (PARTITION BY)  (Window Functions)
+
+Is Short mein seekho:
+✅ AVG() OVER (PARTITION BY dept)
+✅ Rows rehti hain
+✅ Har row ko apne group ka avg
+✅ Compare karna super easy
+
+💻 Example query:
+SELECT name, dept, salary,
+  AVG(salary) OVER (
+    PARTITION BY dept
+  ) AS dept_avg
+FROM employees;
+
+❌ Common mistake: PARTITION BY aur GROUP BY same hain, dono rows merge karte
+✔️ Sahi tareeka: GROUP BY rows merge karta, PARTITION BY rows rakhta hai
+💡 Kyun: PARTITION BY sirf window ka group batata hai, output rows same rehti 🪟
+
+➡️ Next video: ROW_NUMBER()
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Aggregate vs Window (PARTITION BY), Aggregate vs Window (PARTITION BY) in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #partitionby #windowfunctions #sqladvanced #sqltutorial #sqlinterview #mysql","aggregate vs window (partition by), aggregate vs window (partition by) in sql, sql aggregate vs window (partition by), aggregate vs window (partition by) sql in hindi, aggregate vs window (partition by) sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, partitionby, windowfunctions, sqladvanced, sql window functions, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions"
+SQL055,"ROW_NUMBER() | Har row ko roll number do, class monitor style 🎒 | SQL Hindi #55 #shorts","Har row ko roll number do, class monitor style 🎒
+
+📌 SQL Series Part 55: ROW_NUMBER()  (Window Functions)
+
+Is Short mein seekho:
+✅ ROW_NUMBER = 1, 2, 3...
+✅ OVER (ORDER BY ...) zaroori
+✅ Tie mein bhi unique number
+✅ Duplicates hatao: rn = 1
+
+💻 Example query:
+SELECT name, salary,
+  ROW_NUMBER() OVER (
+    ORDER BY salary DESC
+  ) AS rn
+FROM employees;
+
+❌ Common mistake: ROW_NUMBER() OVER ()
+✔️ Sahi tareeka: ROW_NUMBER() OVER (ORDER BY salary DESC)
+💡 Kyun: SQL Server error dega; MySQL/Postgres mein numbering random 🎲
+
+➡️ Next video: RANK vs DENSE_RANK
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: ROW_NUMBER(), ROW_NUMBER() in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #row_number #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #rownumber #windowfunctions #sqlinterview #sqltutorial #mysql","row_number(), row_number() in sql, sql row_number(), row_number() sql in hindi, row_number() sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, rownumber, windowfunctions, sqlinterview, sql window functions, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms"
+SQL056,"RANK vs DENSE_RANK | Do toppers ke same marks, ab rank pe jhagda 🥈 | SQL Hindi #56 #shorts","Do toppers ke same marks, ab rank pe jhagda 🥈
+
+📌 SQL Series Part 56: RANK vs DENSE_RANK  (Window Functions)
+
+Is Short mein seekho:
+✅ ROW_NUMBER: 1, 2, 3, 4
+✅ RANK: 1, 1, 3, 4 (gap)
+✅ DENSE_RANK: 1, 1, 2, 3
+✅ Nth highest → DENSE_RANK
+
+💻 Example query:
+SELECT name, marks,
+ ROW_NUMBER() OVER w AS rn,
+ RANK() OVER w AS rnk,
+ DENSE_RANK() OVER w AS drnk
+FROM students
+WINDOW w AS
+  (ORDER BY marks DESC);
+
+❌ Common mistake: Nth highest ke liye WHERE rnk = 2 -- RANK()
+✔️ Sahi tareeka: Nth highest ke liye WHERE drnk = 2 -- DENSE_RANK()
+💡 Kyun: Tie ke baad RANK 2 skip karta → result khaali 💀
+
+➡️ Next video: PARTITION BY
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: RANK vs DENSE_RANK, RANK vs DENSE_RANK in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #rankvsdense_rank #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #rank #denserank #sqlinterview #sqltutorial #mysql","rank vs dense_rank, rank vs dense_rank in sql, sql rank vs dense_rank, rank vs dense_rank sql in hindi, rank vs dense_rank sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, rank, denserank, sqlinterview, sql window functions, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server"
+SQL057,"PARTITION BY | Har department ka apna topper, koi jealous nahi 🏅 | SQL Hindi #57 #shorts","Har department ka apna topper, koi jealous nahi 🏅
+
+📌 SQL Series Part 57: PARTITION BY  (Window Functions)
+
+Is Short mein seekho:
+✅ PARTITION BY = groups mein todo
+✅ Har group mein numbering 1 se
+✅ Rows rehti hain
+✅ Order: PARTITION → ORDER BY
+
+💻 Example query:
+SELECT name, dept, salary,
+  ROW_NUMBER() OVER (
+    PARTITION BY dept
+    ORDER BY salary DESC
+  ) AS rank_in_dept
+FROM employees;
+
+❌ Common mistake: OVER (ORDER BY salary DESC PARTITION BY dept)
+✔️ Sahi tareeka: OVER (PARTITION BY dept ORDER BY salary DESC)
+💡 Kyun: Pehle PARTITION, phir ORDER. Ulta = syntax error ❌
+
+➡️ Next video: Top N per Group
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: PARTITION BY, PARTITION BY in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #partitionby #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #windowfunctions #sqladvanced #sqltutorial #sqlinterview #mysql","partition by, partition by in sql, sql partition by, partition by sql in hindi, partition by sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, partitionby, windowfunctions, sqladvanced, sql window functions, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms"
+SQL058,Top N per Group | Har department ka boss nikalo ek query mein 👑 | SQL Hindi #58 #shorts,"Har department ka boss nikalo ek query mein 👑
+
+📌 SQL Series Part 58: Top N per Group  (Window Functions)
+
+Is Short mein seekho:
+✅ ROW_NUMBER + PARTITION BY
+✅ CTE / subquery mein lapeto
+✅ WHERE rn = 1 = har group ka top
+✅ Top N → rn ‹= N
+
+💻 Example query:
+WITH r AS (
+ SELECT name, dept, salary,
+  ROW_NUMBER() OVER (
+   PARTITION BY dept
+   ORDER BY salary DESC) AS rn
+ FROM employees)
+SELECT name, dept, salary
+FROM r WHERE rn = 1;
+
+❌ Common mistake: SELECT name FROM employees WHERE ROW_NUMBER() OVER (PARTITION BY dept ORDER BY salary DESC) = 1;
+✔️ Sahi tareeka: -- CTE/subquery mein rn banao -- bahar: WHERE rn = 1
+💡 Kyun: Window WHERE ke baad chalta hai → error. Pehle CTE, phir filter ✓
+
+➡️ Next video: Running Total
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Top N per Group, Top N per Group in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #topnpergroup #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #topn #windowfunctions #sqlinterview #sqltutorial #mysql","top n per group, top n per group in sql, sql top n per group, top n per group sql in hindi, top n per group sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, topn, windowfunctions, sqlinterview, sql window functions, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database"
+SQL059,"Running Total | Paisa jodte jao, SQL hisaab rakhega 💰 | SQL Hindi #59 #shorts","Paisa jodte jao, SQL hisaab rakhega 💰
+
+📌 SQL Series Part 59: Running Total  (Window Functions)
+
+Is Short mein seekho:
+✅ SUM() OVER (ORDER BY ...)
+✅ Har row = ab tak ka total
+✅ PARTITION BY = reset per group
+✅ Month ko number se sort karo
+
+💻 Example query:
+SELECT month, amount,
+  SUM(amount) OVER (
+    ORDER BY month_no
+  ) AS running_total
+FROM sales;
+
+❌ Common mistake: ORDER BY month -- Apr, Feb, Jan, Mar 💀
+✔️ Sahi tareeka: ORDER BY month_no -- 1, 2, 3, 4 ✓
+💡 Kyun: Month text hai to alphabet order sort hoga → running total galat
+
+➡️ Next video: Moving Average (ROWS BETWEEN)
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Running Total, Running Total in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #runningtotal #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #windowfunctions #sqltutorial #sqlinterview #mysql #postgresql","running total, running total in sql, sql running total, running total sql in hindi, running total sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, runningtotal, windowfunctions, sql window functions, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms"
+SQL060,"Moving Average (ROWS BETWEEN) | Share market wala moving average, ab SQL mein 📈 #shorts","Share market wala moving average, ab SQL mein 📈
+
+📌 SQL Series Part 60: Moving Average (ROWS BETWEEN)  (Window Functions)
+
+Is Short mein seekho:
+✅ ROWS BETWEEN n PRECEDING
+✅ AND CURRENT ROW = sliding window
+✅ Trend smooth karo
+✅ Frame bhoole = cumulative avg
+
+💻 Example query:
+SELECT month, amount,
+  AVG(amount) OVER (
+    ORDER BY month_no
+    ROWS BETWEEN 1 PRECEDING
+      AND CURRENT ROW
+  ) AS moving_avg
+FROM sales;
+
+❌ Common mistake: AVG(amount) OVER (ORDER BY month_no)
+✔️ Sahi tareeka: AVG(amount) OVER (ORDER BY month_no ROWS BETWEEN 1 PRECEDING AND CURRENT ROW)
+💡 Kyun: Frame nahi = default shuru se ab tak → cumulative avg aa jaata 😵
+
+➡️ Next video: LAG()
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Moving Average (ROWS BETWEEN), Moving Average (ROWS BETWEEN) in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #movingaverage #windowfunctions #sqltutorial #sqlinterview #mysql #postgresql","moving average (rows between), moving average (rows between) in sql, sql moving average (rows between), moving average (rows between) sql in hindi, moving average (rows between) sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, movingaverage, windowfunctions, sql window functions, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql queries, sql query, mysql, dbms"
+SQL061,LAG() | Pichle mahine se kitna badha? LAG peeche mud ke dekhta hai 👀 | SQL Hindi #61 #shorts,"Pichle mahine se kitna badha? LAG peeche mud ke dekhta hai 👀
+
+📌 SQL Series Part 61: LAG()  (Window Functions)
+
+Is Short mein seekho:
+✅ LAG(col) = pichli row
+✅ LAG(col, 2) = 2 rows peeche
+✅ Pehli row → NULL
+✅ Growth = amount - LAG(amount)
+
+💻 Example query:
+SELECT month, amount,
+  LAG(amount) OVER
+    (ORDER BY month_no) AS prev,
+  amount - LAG(amount) OVER
+    (ORDER BY month_no) AS growth
+FROM sales;
+
+❌ Common mistake: LAG(amount) OVER ()
+✔️ Sahi tareeka: LAG(amount) OVER (ORDER BY month_no)
+💡 Kyun: Bina ORDER BY ""pichla"" kaun? SQL Server error, baaki DB random 🎲
+
+➡️ Next video: LEAD()
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: LAG(), LAG() in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #lag #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #windowfunctions #sqlinterview #sqltutorial #mysql #postgresql","lag(), lag() in sql, sql lag(), lag() sql in hindi, lag() sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, lag, windowfunctions, sqlinterview, sql window functions, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, data analytics, shorts"
+SQL062,LEAD() | Future dekhna hai? LEAD agli row bata deta hai 🔮 | SQL Hindi #62 #shorts,"Future dekhna hai? LEAD agli row bata deta hai 🔮
+
+📌 SQL Series Part 62: LEAD()  (Window Functions)
+
+Is Short mein seekho:
+✅ LEAD(col) = agli row ki value
+✅ Aakhri row → NULL
+✅ LEAD(col, n, default) bhi chalta hai
+✅ LAG = peeche, LEAD = aage
+
+💻 Example query:
+SELECT month, amount,
+  LEAD(amount) OVER (
+    ORDER BY month_no
+  ) AS next_month
+FROM sales;
+
+❌ Common mistake: LEAD = pichli row, LAG = agli row
+✔️ Sahi tareeka: LAG = peeche ⬅️, LEAD = aage ➡️
+💡 Kyun: Direction ulti li to poori report ulti 💀 LEAD = lead karna = aage
+
+➡️ Next video: NTILE()
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: LEAD(), LEAD() in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #lead #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #windowfunctions #sqladvanced #sqltutorial #sqlinterview #mysql","lead(), lead() in sql, sql lead(), lead() sql in hindi, lead() sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, lead, windowfunctions, sqladvanced, sql window functions, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, data analytics"
+SQL063,"NTILE() | Sabko barabar baaltiyon mein baanto, no favouritism 🪣 | SQL Hindi #63 #shorts","Sabko barabar baaltiyon mein baanto, no favouritism 🪣
+
+📌 SQL Series Part 63: NTILE()  (Window Functions)
+
+Is Short mein seekho:
+✅ NTILE(n) = n barabar buckets
+✅ Extra rows pehle buckets mein
+✅ NTILE(4) = quartile, top 25%
+✅ Range chahiye to CASE WHEN
+
+💻 Example query:
+SELECT name, salary,
+  NTILE(2) OVER (
+    ORDER BY salary DESC
+  ) AS bucket
+FROM employees;
+
+❌ Common mistake: NTILE(2) → 50k se kam ek bucket, upar wale doosre
+✔️ Sahi tareeka: NTILE(2) → rows ko gin ke do barabar hisse
+💡 Kyun: Buckets row count se bante hain, value range se nahi. Range chahiye? CASE use karo
+
+➡️ Next video: FIRST_VALUE & LAST_VALUE
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: NTILE(), NTILE() in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #ntile #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #windowfunctions #sqladvanced #sqltutorial #sqlinterview #mysql","ntile(), ntile() in sql, sql ntile(), ntile() sql in hindi, ntile() sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, ntile, windowfunctions, sqladvanced, sql window functions, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, data engineer"
+SQL064,FIRST_VALUE & LAST_VALUE | LAST_VALUE ka trap jisme 90% log phaste hain 🪤 | SQL Hindi #64 #shorts,"LAST_VALUE ka trap jisme 90% log phaste hain 🪤
+
+📌 SQL Series Part 64: FIRST_VALUE & LAST_VALUE  (Window Functions)
+
+Is Short mein seekho:
+✅ FIRST_VALUE = pehli value
+✅ LAST_VALUE = aakhri value
+✅ Default frame current row pe rukta hai
+✅ LAST ke saath UNBOUNDED FOLLOWING
+
+💻 Example query:
+SELECT name, dept,
+  FIRST_VALUE(name) OVER (
+    PARTITION BY dept
+    ORDER BY salary DESC
+  ) AS top_earner
+FROM employees;
+
+❌ Common mistake: LAST_VALUE(name) OVER ( ORDER BY salary DESC)
+✔️ Sahi tareeka: LAST_VALUE(name) OVER ( ORDER BY salary DESC ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING)
+💡 Kyun: Full frame bhoole to har row ko apni hi value milegi 💀
+
+➡️ Next video: Percent of Total
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: FIRST_VALUE & LAST_VALUE, FIRST_VALUE & LAST_VALUE in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #firstvalue #lastvalue #windowfunctions #sqltutorial #sqlinterview #mysql","first_value last_value, first_value last_value in sql, sql first_value last_value, first_value last_value sql in hindi, first_value last_value sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, firstvalue, lastvalue, windowfunctions, sql window functions, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query"
+SQL065,Percent of Total | Kiska kitna hissa? Pizza ki tarah baanto 🍕 | SQL Hindi #65 #shorts,"Kiska kitna hissa? Pizza ki tarah baanto 🍕
+
+📌 SQL Series Part 65: Percent of Total  (Window Functions)
+
+Is Short mein seekho:
+✅ Total har row pe: SUM() OVER ()
+✅ pct = part × 100.0 / total
+✅ ROUND(…, 1) se saaf number
+✅ Group-wise? PARTITION BY
+
+💻 Example query:
+SELECT name, salary,
+  ROUND(salary * 100.0
+    / SUM(salary) OVER (), 1)
+  AS pct
+FROM employees;
+
+❌ Common mistake: salary * 100 / SUM(salary) OVER ()
+✔️ Sahi tareeka: salary * 100.0 / SUM(salary) OVER ()
+💡 Kyun: PostgreSQL / SQL Server mein int ÷ int = int → 25.7 ban jaata 25 💀 (MySQL bach jaata)
+
+➡️ Next video: Nth Highest Salary (DENSE_RANK)
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Percent of Total, Percent of Total in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #percentoftotal #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #windowfunctions #sqltutorial #sqlinterview #mysql #postgresql","percent of total, percent of total in sql, sql percent of total, percent of total sql in hindi, percent of total sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, percentoftotal, windowfunctions, sql window functions, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, dbms"
+SQL066,Nth Highest Salary (DENSE_RANK) | 3rd highest salary ab 1 line ka kaam 🥉 | SQL Hindi #66 #shorts,"3rd highest salary ab 1 line ka kaam 🥉
+
+📌 SQL Series Part 66: Nth Highest Salary (DENSE_RANK)  (Window Functions)
+
+Is Short mein seekho:
+✅ DENSE_RANK = no gaps, ties same
+✅ CTE mein rank, bahar WHERE rnk = N
+✅ ROW_NUMBER = ties pe galat
+✅ Dept-wise? PARTITION BY
+
+💻 Example query:
+WITH r AS (
+  SELECT name, salary,
+    DENSE_RANK() OVER (
+      ORDER BY salary DESC
+    ) AS rnk
+  FROM employees
+)
+SELECT * FROM r WHERE rnk = 3;
+
+❌ Common mistake: ROW_NUMBER() OVER ( ORDER BY salary DESC) ... WHERE rn = 3
+✔️ Sahi tareeka: DENSE_RANK() OVER ( ORDER BY salary DESC) ... WHERE rnk = 3
+💡 Kyun: ROW_NUMBER tie ko alag number deta → rn 3 = 70,000 (galat!) 💀
+
+➡️ Next video: CTE (WITH clause)
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Nth Highest Salary (DENSE_RANK), Nth Highest Salary (DENSE_RANK) in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #nthhighestsalary #denserank #sqlinterview #sqltutorial #mysql #postgresql","nth highest salary (dense_rank), nth highest salary (dense_rank) in sql, sql nth highest salary (dense_rank), nth highest salary (dense_rank) sql in hindi, nth highest salary (dense_rank) sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, nthhighestsalary, denserank, sqlinterview, sql window functions, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql queries"
+SQL067,CTE (WITH clause) | Spaghetti query ko saaf thaali mein parosna 🍝 | SQL Hindi #67 #shorts,"Spaghetti query ko saaf thaali mein parosna 🍝
+
+📌 SQL Series Part 67: CTE (WITH clause)  (CTE & Subqueries)
+
+Is Short mein seekho:
+✅ WITH naam AS (query)
+✅ Table ki tarah use, temporary
+✅ Multiple CTEs: comma se
+✅ Permanent chahiye? VIEW
+
+💻 Example query:
+WITH dept_avg AS (
+  SELECT dept,
+    AVG(salary) AS avg_sal
+  FROM employees
+  GROUP BY dept
+)
+SELECT * FROM dept_avg
+WHERE avg_sal › 50000;
+
+❌ Common mistake: CTE banaya, ab kal bhi SELECT * FROM dept_avg
+✔️ Sahi tareeka: Har baar query ke saath WITH dept_avg AS (...) likho
+💡 Kyun: CTE temporary hai, query khatam to gayab. Permanent chahiye? VIEW / table banao
+
+➡️ Next video: Recursive CTE
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: CTE (WITH clause), CTE (WITH clause) in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #ctewithclause #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #cte #withclause #sqladvanced #sqltutorial #sqlinterview","cte (with clause), cte (with clause) in sql, sql cte (with clause), cte (with clause) sql in hindi, cte (with clause) sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, cte, withclause, sqladvanced, sql cte & subqueries, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, dbms"
+SQL068,"Recursive CTE | SQL mein loop? Haan bhai, ho sakta hai 🔁 | SQL Hindi #68 #shorts","SQL mein loop? Haan bhai, ho sakta hai 🔁
+
+📌 SQL Series Part 68: Recursive CTE  (CTE & Subqueries)
+
+Is Short mein seekho:
+✅ WITH RECURSIVE = SQL ka loop
+✅ Anchor + UNION ALL + recursive
+✅ Stop condition zaroori
+✅ Use: org chart, tree, dates
+
+💻 Example query:
+WITH RECURSIVE nums AS (
+  SELECT 1 AS n
+  UNION ALL
+  SELECT n + 1 FROM nums
+  WHERE n ‹ 5
+)
+SELECT n FROM nums;
+
+❌ Common mistake: SELECT n + 1 FROM nums -- WHERE gayab
+✔️ Sahi tareeka: SELECT n + 1 FROM nums WHERE n ‹ 5
+💡 Kyun: Stop nahi to infinite loop → error (SQL Server: 100, MySQL: 1000 recursion limit) 💀
+
+➡️ Next video: Correlated Subquery
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Recursive CTE, Recursive CTE in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #recursivecte #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #cte #sqladvanced #sqltutorial #sqlinterview #mysql","recursive cte, recursive cte in sql, sql recursive cte, recursive cte sql in hindi, recursive cte sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, recursivecte, cte, sqladvanced, sql cte & subqueries, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms"
+SQL069,Correlated Subquery | Apne hi department se zyada kaun kamata hai? 🕵️ | SQL Hindi #69 #shorts,"Apne hi department se zyada kaun kamata hai? 🕵️
+
+📌 SQL Series Part 69: Correlated Subquery  (CTE & Subqueries)
+
+Is Short mein seekho:
+✅ Inner query outer column use kare
+✅ Har row ke liye chalti hai
+✅ Alias sahi: e.dept
+✅ Fast chahiye? Window function
+
+💻 Example query:
+SELECT name, dept, salary
+FROM employees e
+WHERE salary › (
+  SELECT AVG(salary)
+  FROM employees
+  WHERE dept = e.dept
+);
+
+❌ Common mistake: SELECT AVG(salary) FROM employees WHERE dept = dept
+✔️ Sahi tareeka: SELECT AVG(salary) FROM employees WHERE dept = e.dept
+💡 Kyun: dept = dept hamesha true → poori company ka avg aa gaya, dept wala nahi 💀
+
+➡️ Next video: EXISTS vs IN
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Correlated Subquery, Correlated Subquery in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #correlatedsubquery #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #subquery #sqlinterview #sqltutorial #mysql #postgresql","correlated subquery, correlated subquery in sql, sql correlated subquery, correlated subquery sql in hindi, correlated subquery sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, correlatedsubquery, subquery, sqlinterview, sql cte & subqueries, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, dbms"
+SQL070,EXISTS vs IN | NOT IN aur NULL ka khatarnaak combo 💥 | SQL Hindi #70 #shorts,"NOT IN aur NULL ka khatarnaak combo 💥
+
+📌 SQL Series Part 70: EXISTS vs IN  (CTE & Subqueries)
+
+Is Short mein seekho:
+✅ EXISTS = hai ya nahi, pehla match stop
+✅ IN = value list se match
+✅ NOT IN + NULL = 0 rows
+✅ Hamesha NOT EXISTS use karo
+
+💻 Example query:
+SELECT name
+FROM customers c
+WHERE EXISTS (
+  SELECT 1 FROM orders o
+  WHERE o.customer_id = c.id
+);
+
+❌ Common mistake: WHERE id NOT IN ( SELECT customer_id FROM orders)
+✔️ Sahi tareeka: WHERE NOT EXISTS ( SELECT 1 FROM orders o WHERE o.customer_id = c.id)
+💡 Kyun: List mein ek bhi NULL → NOT IN zero rows deta hai, bina error ke
+
+➡️ Next video: COALESCE & NULLIF
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: EXISTS vs IN, EXISTS vs IN in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #existsvsin #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #exists #subquery #sqlinterview #sqltutorial #mysql","exists vs in, exists vs in in sql, sql exists vs in, exists vs in sql in hindi, exists vs in sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, exists, subquery, sqlinterview, sql cte & subqueries, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, shorts"
+SQL071,COALESCE & NULLIF | NULL ka ilaaj: COALESCE ki goli 💊 | SQL Hindi #71 #shorts,"NULL ka ilaaj: COALESCE ki goli 💊
+
+📌 SQL Series Part 71: COALESCE & NULLIF  (Functions)
+
+Is Short mein seekho:
+✅ COALESCE = pehla non-NULL
+✅ NULL ki jagah default value
+✅ NULLIF(a, b): barabar → NULL
+✅ x / NULLIF(y, 0) = safe divide
+
+💻 Example query:
+SELECT name,
+  COALESCE(
+    CAST(manager_id AS CHAR),
+    'No manager'
+  ) AS manager
+FROM employees;
+
+❌ Common mistake: SQL Server: ISNULL(x, 0) MySQL: IFNULL(x, 0)
+✔️ Sahi tareeka: Har jagah: COALESCE(x, 0)
+💡 Kyun: DB badla to query tooti. COALESCE standard hai, sab jagah same chalega
+
+➡️ Next video: CAST (Type Conversion)
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: COALESCE & NULLIF, COALESCE & NULLIF in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #coalescenullif #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #coalesce #nullif #sqltips #sqltutorial #sqlinterview","coalesce nullif, coalesce nullif in sql, sql coalesce nullif, coalesce nullif sql in hindi, coalesce nullif sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, coalesce, nullif, sqltips, sql functions, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms"
+SQL072,CAST (Type Conversion) | '10' chhota hai '9' se? Text ki duniya alag hai 🤨 | SQL Hindi #72 #shorts,"'10' chhota hai '9' se? Text ki duniya alag hai 🤨
+
+📌 SQL Series Part 72: CAST (Type Conversion)  (Functions)
+
+Is Short mein seekho:
+✅ CAST(x AS type) = type badlo
+✅ Text sort: '10' ‹ '9'
+✅ MySQL: SIGNED / CHAR
+✅ Number ko number type mein rakho
+
+💻 Example query:
+SELECT
+  CAST('123' AS INT) + 7
+  AS result;
+-- result: 130
+
+❌ Common mistake: roll_no TEXT column: ORDER BY roll_no → 1, 10, 2, 9
+✔️ Sahi tareeka: ORDER BY CAST(roll_no AS INT) → 1, 2, 9, 10
+💡 Kyun: Number ko text mein rakha to sort dictionary jaisa hoga, ginti jaisa nahi 💀
+
+➡️ Next video: CROSS JOIN
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: CAST (Type Conversion), CAST (Type Conversion) in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #casttypeconversion #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #cast #typeconversion #sqltips #sqltutorial #sqlinterview","cast (type conversion), cast (type conversion) in sql, sql cast (type conversion), cast (type conversion) sql in hindi, cast (type conversion) sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, cast, typeconversion, sqltips, sql functions, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql"
+SQL073,"CROSS JOIN | 3 shirts x 2 colours = 6 outfits, SQL ne pehna diye 👕 | SQL Hindi #73 #shorts","3 shirts x 2 colours = 6 outfits, SQL ne pehna diye 👕
+
+📌 SQL Series Part 73: CROSS JOIN  (Joins Advanced)
+
+Is Short mein seekho:
+✅ CROSS JOIN = har row × har row
+✅ Rows = A × B
+✅ ON nahi lagta
+✅ Galti se bina ON = rows ka dhamaka
+
+💻 Example query:
+SELECT s.size, c.color
+FROM sizes s
+CROSS JOIN colors c;
+
+❌ Common mistake: SELECT * FROM customers, orders;
+✔️ Sahi tareeka: SELECT * FROM customers c JOIN orders o ON o.customer_id = c.id;
+💡 Kyun: ON / WHERE bhoole to accidental cross join → rows ka dhamaka 💥 (MySQL JOIN bina ON bhi chala deta)
+
+➡️ Next video: Duplicates dhundo aur hatao
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: CROSS JOIN, CROSS JOIN in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #crossjoin #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #joins #sqltips #sqltutorial #sqlinterview #mysql","cross join, cross join in sql, sql cross join, cross join sql in hindi, cross join sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, crossjoin, joins, sqltips, sql joins advanced, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, shorts"
+SQL074,"Duplicates dhundo aur hatao | Ek email, do baar? Doppelganger pakdo 👯‍♂️ | SQL Hindi #74 #shorts","Ek email, do baar? Doppelganger pakdo 👯‍♂️
+
+📌 SQL Series Part 74: Duplicates dhundo aur hatao  (Data Quality)
+
+Is Short mein seekho:
+✅ Find: GROUP BY + HAVING › 1
+✅ Number: ROW_NUMBER PARTITION BY
+✅ Keep rn = 1, delete rn › 1
+✅ DELETE se pehle backup
+
+💻 Example query:
+SELECT email, COUNT(*)
+FROM users
+GROUP BY email
+HAVING COUNT(*) › 1;
+
+❌ Common mistake: Seedha: DELETE FROM users WHERE ...
+✔️ Sahi tareeka: Pehle backup + SELECT check, phir DELETE (transaction mein)
+💡 Kyun: DELETE ka undo button nahi. Galat WHERE = asli data bhi gaya 💀
+
+➡️ Next video: Transactions (COMMIT / ROLLBACK)
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Duplicates dhundo aur hatao, Duplicates dhundo aur hatao in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #duplicates #rownumber #sqlinterview #sqltutorial #mysql #postgresql","duplicates dhundo aur hatao, duplicates dhundo aur hatao in sql, sql duplicates dhundo aur hatao, duplicates dhundo aur hatao sql in hindi, duplicates dhundo aur hatao sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, duplicates, rownumber, sqlinterview, sql data quality, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, mysql"
+SQL075,Transactions (COMMIT / ROLLBACK) | Paise kat gaye par pahunche nahi? Ye kabhi nahi hoga 🏦 #shorts,"Paise kat gaye par pahunche nahi? Ye kabhi nahi hoga 🏦
+
+📌 SQL Series Part 75: Transactions (COMMIT / ROLLBACK)  (Transactions)
+
+Is Short mein seekho:
+✅ BEGIN = shuru
+✅ COMMIT = pakka save
+✅ ROLLBACK = sab wapas
+✅ All or nothing, beech ka nahi
+
+💻 Example query:
+BEGIN;
+UPDATE accounts
+  SET balance = balance - 200
+  WHERE name = 'A';
+UPDATE accounts
+  SET balance = balance + 200
+  WHERE name = 'B';
+COMMIT;
+
+❌ Common mistake: BEGIN; UPDATE accounts ...; -- COMMIT gayab
+✔️ Sahi tareeka: BEGIN; UPDATE accounts ...; COMMIT;
+💡 Kyun: COMMIT nahi kiya → session band hote hi rollback, aur tab tak rows lock 🔒
+
+➡️ Next video: ACID Properties
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Transactions (COMMIT / ROLLBACK), Transactions (COMMIT / ROLLBACK) in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #transactions #commit #rollback #sqltutorial #sqlinterview #mysql","transactions (commit rollback), transactions (commit rollback) in sql, sql transactions (commit rollback), transactions (commit rollback) sql in hindi, transactions (commit rollback) sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, transactions, commit, rollback, sql transactions, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql queries, sql query, mysql, dbms"
+SQL076,ACID Properties | Bank ka database kabhi galti kyun nahi karta? 🔐 | SQL Hindi #76 #shorts,"Bank ka database kabhi galti kyun nahi karta? 🔐
+
+📌 SQL Series Part 76: ACID Properties  (Transactions)
+
+Is Short mein seekho:
+✅ A: all or nothing
+✅ C: rules kabhi na tootein
+✅ I: parallel mein no clash
+✅ D: COMMIT = forever saved
+
+❌ Common mistake: Isolation = data ke rules sahi rakhna
+✔️ Sahi tareeka: Consistency = rules safe, Isolation = parallel txns no clash
+💡 Kyun: C = kya sahi hai (rules). I = ek saath chalne pe takraav nahi
+
+➡️ Next video: Normalization (1NF, 2NF, 3NF)
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: ACID Properties, ACID Properties in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #acidproperties #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #acid #dbms #sqlinterview #sqltutorial #mysql","acid properties, acid properties in sql, sql acid properties, acid properties sql in hindi, acid properties sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, acid, dbms, sqlinterview, sql transactions, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, rdbms, shorts"
+SQL077,"Normalization (1NF, 2NF, 3NF) | Ek table mein poora ghar bhar diya? Normalize karo 🧹 #shorts","Ek table mein poora ghar bhar diya? Normalize karo 🧹
+
+📌 SQL Series Part 77: Normalization (1NF, 2NF, 3NF)  (Database Design)
+
+Is Short mein seekho:
+✅ 1NF: ek cell, ek value
+✅ 2NF: partial dependency hatao
+✅ 3NF: transitive dependency hatao
+✅ Over-normalize mat karo, balance
+
+❌ Common mistake: Har cheez itni todna ki har query mein 10 JOINs
+✔️ Sahi tareeka: 3NF tak normalize, reporting ke liye thoda denormalize bhi chalta
+💡 Kyun: Zyada normalize = query slow aur samajhna mushkil. Balance rakho ⚖️
+
+➡️ Next video: Stored Procedure
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Normalization (1NF, 2NF, 3NF), Normalization (1NF, 2NF, 3NF) in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #normalization #dbms #databasedesign #sqltutorial #sqlinterview #mysql","normalization (1nf 2nf 3nf), normalization (1nf 2nf 3nf) in sql, sql normalization (1nf 2nf 3nf), normalization (1nf 2nf 3nf) sql in hindi, normalization (1nf 2nf 3nf) sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, normalization, dbms, databasedesign, sql database design, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, mysql"
+SQL078,"Stored Procedure | Query ko function bana do, ek button mein kaam 🔘 | SQL Hindi #78 #shorts","Query ko function bana do, ek button mein kaam 🔘
+
+📌 SQL Series Part 78: Stored Procedure  (Database Programming)
+
+Is Short mein seekho:
+✅ CREATE PROCEDURE = query save
+✅ IN parameter se input
+✅ CALL proc('IT') se chalao
+✅ MySQL: DELIMITER mat bhoolo
+
+💻 Example query:
+DELIMITER //
+CREATE PROCEDURE get_dept(
+  IN d VARCHAR(20))
+BEGIN
+  SELECT name, salary
+  FROM employees WHERE dept = d;
+END //
+DELIMITER ;
+
+❌ Common mistake: CREATE PROCEDURE ... BEGIN SELECT ...; END;
+✔️ Sahi tareeka: DELIMITER // CREATE PROCEDURE ... BEGIN SELECT ...; END // DELIMITER ;
+💡 Kyun: MySQL client pehle ; pe hi command kaat deta → syntax error 💀
+
+➡️ Next video: Manager se zyada salary
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Stored Procedure, Stored Procedure in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #storedprocedure #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #mysql #sqladvanced #sqltutorial #sqlinterview #postgresql","stored procedure, stored procedure in sql, sql stored procedure, stored procedure sql in hindi, stored procedure sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, storedprocedure, mysql, sqladvanced, sql database programming, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, postgresql, sql server, dbms"
+SQL079,Manager se zyada salary | Kaun apne boss se zyada kama raha hai? 👀💸 | SQL Hindi #79 #shorts,"Kaun apne boss se zyada kama raha hai? 👀💸
+
+📌 SQL Series Part 79: Manager se zyada salary  (Interview Prep)
+
+Is Short mein seekho:
+✅ Self JOIN: same table, 2 aliases
+✅ e.manager_id = m.id
+✅ WHERE e.salary › m.salary
+✅ INNER JOIN kaafi, LEFT nahi
+
+💻 Example query:
+SELECT e.name, e.salary,
+  m.name AS manager,
+  m.salary AS mgr_salary
+FROM employees e
+JOIN employees m
+  ON e.manager_id = m.id
+WHERE e.salary › m.salary;
+
+❌ Common mistake: LEFT JOIN employees m ON e.manager_id = m.id WHERE e.salary › m.salary
+✔️ Sahi tareeka: JOIN employees m ON e.manager_id = m.id WHERE e.salary › m.salary
+💡 Kyun: Aarav ka m.salary NULL → compare UNKNOWN → row gayab. LEFT JOIN se sirf confusion
+
+➡️ Next video: Month-wise Report
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Manager se zyada salary, Manager se zyada salary in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #managersezyadasalary #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #sqlinterview #selfjoin #sqlquestions #sqltutorial #mysql","manager se zyada salary, manager se zyada salary in sql, sql manager se zyada salary, manager se zyada salary sql in hindi, manager se zyada salary sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, sqlinterview, selfjoin, sqlquestions, sql interview prep, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query"
+SQL080,Month-wise Report | Boss ne monthly report maangi? 10 second ka kaam 📅 | SQL Hindi #80 #shorts,"Boss ne monthly report maangi? 10 second ka kaam 📅
+
+📌 SQL Series Part 80: Month-wise Report  (Interview Prep)
+
+Is Short mein seekho:
+✅ Date → month (YYYY-MM)
+✅ GROUP BY month
+✅ SUM(amount) + ORDER BY
+✅ Function DB pe depend karta
+
+💻 Example query:
+SELECT
+  DATE_FORMAT(order_date,
+    '%Y-%m') AS month,
+  SUM(amount) AS total
+FROM orders
+GROUP BY month
+ORDER BY month;
+
+❌ Common mistake: GROUP BY order_date
+✔️ Sahi tareeka: GROUP BY DATE_FORMAT(order_date, '%Y-%m')
+💡 Kyun: Seedha date pe group = har din ki alag row, month nahi 💀
+
+➡️ Next video: Advanced SQL Recap
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Month-wise Report, Month-wise Report in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #monthwisereport #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #monthlyreport #dates #sqltutorial #sqlinterview #mysql","month wise report, month wise report in sql, sql month wise report, month wise report sql in hindi, month wise report sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, monthlyreport, dates, sql interview prep, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms"
+SQL081,"Advanced SQL Recap | Advanced SQL ek reel mein, ab interview tumhara 🚀 | SQL Hindi #81 #shorts","Advanced SQL ek reel mein, ab interview tumhara 🚀
+
+📌 SQL Series Part 81: Advanced SQL Recap  (Interview Prep)
+
+Is Short mein seekho:
+✅ Ranking: ROW_NUMBER · RANK · DENSE
+✅ LAG · LEAD · running total
+✅ CTE · Recursive CTE
+✅ EXISTS · Transactions · ACID
+
+💻 Example query:
+WITH r AS (
+  SELECT dept, name, salary,
+    DENSE_RANK() OVER (
+      PARTITION BY dept
+      ORDER BY salary DESC
+    ) AS rnk
+  FROM employees
+) SELECT * FROM r WHERE rnk ‹= 2;
+
+❌ Common mistake: ROW_NUMBER, RANK, LAG ke syntax ratt liye
+✔️ Sahi tareeka: Har function ka kab aur kyun sample data pe samjho
+💡 Kyun: Sawaal ghuma ke aaya to ratta fail. Logic yaad rahe to syntax khud aa jaata 🧠
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: Advanced SQL Recap, Advanced SQL Recap in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #advancedsqlrecap #learnsql #dataanalyst #coding #programming #sqlforbeginners #techreels #advancedsql #windowfunctions #sqlinterview #sqltutorial #mysql","advanced sql recap, advanced sql recap in sql, sql advanced sql recap, advanced sql recap sql in hindi, advanced sql recap sql interview question, sql, learnsql, sqlinhindi, dataanalyst, coding, programming, sqlforbeginners, techreels, advancedsql, windowfunctions, sqlinterview, sql interview prep, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql"
+SQL082,EXPLAIN ANALYZE | Query slow hai? EXPLAIN ANALYZE se pata lagao! 🔍 | SQL Hindi #82 #shorts,"Query slow hai? EXPLAIN ANALYZE se pata lagao! 🔍
+
+📌 SQL Series Part 82: EXPLAIN ANALYZE  (Advanced Basics)
+
+Is Short mein seekho:
+✅ EXPLAIN ANALYZE se execution plan milta hai
+✅ type, rows, Extra se bottleneck pehchano
+✅ Index ya column selection se plan improve karo
+✅ Har query ke liye plan check karna best practice
+
+💻 Example query:
+SELECT * FROM orders WHERE customer_id = 5;
+EXPLAIN ANALYZE SELECT * FROM orders WHERE customer_id = 5;
+
+❌ Common mistake: EXPLAIN ANALYZE SELECT * FROM orders; -- WHERE missing, plan full table dikhata
+✔️ Sahi tareeka: EXPLAIN ANALYZE SELECT * FROM orders WHERE customer_id = 5; -- specific filter se index usage dikhai
+💡 Kyun: WHERE bina index ka fayda nahi dikhata, galat plan se optimization galat hota hai
+
+➡️ Next video: Partitioning
+
+━━━━━━━━━━━━━━━━━━
+🚀 The 30 Sec Dev: roz SQL seekho, sirf 30 second mein, simple Hinglish mein.
+Data analyst, backend developer, data engineer aur SQL interview ki taiyari ke liye
+SELECT se le kar JOINs, window functions, CTE, indexes aur query optimization tak, step by step.
+
+🔔 Subscribe karo aur bell dabao: @the30sec_dev
+📸 Instagram par carousel notes: @the30secdev
+💾 Video save kar lo, interview se pehle revise karna.
+
+Is video mein: EXPLAIN ANALYZE, EXPLAIN ANALYZE in SQL, SQL tutorial in Hindi, SQL for beginners, SQL interview questions, MySQL, PostgreSQL, DBMS
+
+#shorts #sql #sqlinhindi #explainanalyze #learnsql #sqltutorial #sqlforbeginners #sqlinterview #dataanalyst #mysql #postgresql #database #coding #programming","explain analyze, explain analyze in sql, sql explain analyze, explain analyze sql in hindi, explain analyze sql interview question, sql advanced basics, sql, sql in hindi, learn sql, sql tutorial, sql tutorial in hindi, sql for beginners, sql interview questions, sql interview questions and answers, sql queries, sql query, mysql, postgresql, sql server, database, dbms, rdbms, data analyst, data analytics, data engineer, sql course, sql full course, sql hindi, shorts"

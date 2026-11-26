@@ -5,7 +5,9 @@ Uploads the SQL reel series (SQL001, SQL002, …) to YouTube as Shorts, **4 a da
 
 - Videos: Cloudinary `insta/reel/SQLxxx.mp4`, ONE copy shared with the Instagram loop (test_in_up).
   A video is deleted only once it is posted on both Instagram and YouTube (each loop checks the other's posted CSV).
-- Captions: the same `sql_reel_posts.csv` the Instagram loop uses, read from the public `yavnish3/test_in_up` repo.
+- Title / description / tags: `yt/yt_videos.csv` (YouTube-only text: SEO title, long description, 15 hashtags, ~35 tags).
+  Edit it by hand any time. Rows for new reels are built automatically by `yt/yt_meta.py` from the test_in_up data
+  (`python yt/build_yt_csv.py` adds missing rows; `--all` rebuilds every row and overwrites hand edits).
 - Progress: `yt/yt_posted.csv`. Never overwrite it.
 - New AI reels (SQL082+): the generator in `test_in_up` uploads them to `insta/reel/`; both loops pick them up.
 

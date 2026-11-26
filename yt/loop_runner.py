@@ -35,10 +35,10 @@ def git(*args, check=True):
 
 
 def save():
-    git("add", "yt/yt_posted.csv", check=False)
+    git("add", "yt/yt_posted.csv", "yt/yt_videos.csv", check=False)
     if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT).returncode == 0:
         return
-    git("commit", "-m", "Update yt_posted.csv")
+    git("commit", "-m", "Update yt_posted.csv / yt_videos.csv")
     for _ in range(5):
         try:
             git("pull", "--rebase")
