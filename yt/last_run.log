@@ -1,38 +1,38 @@
-run at 2026-11-26 16:35 UTC
+run at 2026-11-26 20:35 UTC
 missing secrets: none | AI keys set: ['GROQ_API_KEY', 'GEMINI_API_KEY', 'GEMINI_API_KEY_2']
 exit code: 0
 
-Next: SQL001
+Next: SQL002
 {
  "snippet": {
-  "title": "Database kya hota hai? 🤔 SQL se jaaniye app ka data ghar! 🚀 #shorts",
+  "title": "SQL kya hai? 🤔 Dekho kaise DB se baat karte hain! SQL Basics #shorts",
   "tags": [
-   "database kya hota hai",
+   "sql kya hai",
    "sql tutorial hindi",
    "sql interview questions",
    "sql basics",
-   "sql select query",
-   "database vs excel",
    "sql for beginners",
-   "data storage india",
-   "sql short video",
-   "sql hindi tutorial",
-   "sql ka introduction",
-   "database introduction",
-   "sql select example",
-   "learn sql fast",
-   "sql interview prep",
-   "sql data management",
-   "sql coding basics",
-   "sql query tutorial",
    "sql in hindi",
-   "sql explained",
-   "database concepts",
-   "sql for data analyst",
-   "sql practice questions",
-   "sql tips",
+   "learn sql",
+   "sql select query",
+   "sql select statement",
+   "sql declarative language",
+   "sql vs python",
+   "mysql postgresql sql server",
+   "sql example query",
+   "sql table result",
+   "sql common mistakes",
+   "sql interview prep",
+   "sql short tutorial",
+   "sql short video",
+   "sql short hindi",
+   "sql short coding",
+   "sql data retrieval",
+   "sql select name",
+   "sql employees query",
+   "sql cheat sheet",
    "sql",
-   "dbms"
+   "learnsql"
   ],
   "categoryId": "27",
   "defaultLanguage": "hi",
@@ -44,6 +44,8 @@ Next: SQL001
   "embeddable": true
  }
 }
-Downloaded 15.8 MB, uploading to YouTube…
-Uploaded SQL001: https://youtube.com/shorts/3-VjTY_U0QI  (privacy: public, upload: uploaded)
-Deleted from Cloudinary (posted on both): ['insta/reel/SQL001']
+Downloaded 15.5 MB, uploading to YouTube…
+Thumbnail: set
+Uploaded SQL002: https://youtube.com/shorts/L_Slfqm_ihE  (privacy: public, upload: uploaded)
+Deleted from Cloudinary (posted on both): ['insta/reel/SQL002']
+Deleted from Cloudinary (posted on both): ['insta/thumbnails/SQL002']
