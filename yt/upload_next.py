@@ -62,7 +62,7 @@ def metadata(item):
     title = title[:100]
     tags_line = item.get("hashtags", "").strip()
     desc = clean(f"{item['caption'].strip()}\n\n{tags_line} #shorts\n\n"
-                 "Roz SQL seekho, 30 second mein. Subscribe: @the30secdev")
+                 "Roz SQL seekho, 30 second mein. Subscribe: @the30sec_dev")
     tags, total = [], 0
     for t in [h.lstrip("#") for h in tags_line.split()] + EXTRA_TAGS:
         if t and t not in tags and total + len(t) + 1 <= 450:
