@@ -7,7 +7,7 @@ Captions: sql_reel_posts.csv from the public yavnish3/test_in_up repo (same text
 Progress: yt_posted.csv (id, video_id, posted_at). Posted ids are never uploaded again.
 After a successful upload the yt/reel copy is deleted from Cloudinary.
 
-Env: YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN, MEDIA_BASE_URL,
+Env: YT_CLIENT_JSON (or YT_CLIENT_ID + YT_CLIENT_SECRET), YT_REFRESH_TOKEN, MEDIA_BASE_URL,
      CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET, optional YT_PRIVACY (public|unlisted|private).
 
     python upload_next.py            # upload one
@@ -76,10 +76,21 @@ def metadata(item):
     }
 
 
+def client():
+    """Client id/secret from YT_CLIENT_JSON (the whole downloaded credentials JSON) or YT_CLIENT_ID/_SECRET."""
+    raw = os.environ.get("YT_CLIENT_JSON", "").strip()
+    if raw:
+        data = json.loads(raw)
+        data = data.get("installed") or data.get("web") or data
+        return data["client_id"], data["client_secret"]
+    return os.environ["YT_CLIENT_ID"], os.environ["YT_CLIENT_SECRET"]
+
+
 def access_token():
+    cid, secret = client()
     resp = requests.post("https://oauth2.googleapis.com/token", data={
-        "client_id": os.environ["YT_CLIENT_ID"],
-        "client_secret": os.environ["YT_CLIENT_SECRET"],
+        "client_id": cid,
+        "client_secret": secret,
         "refresh_token": os.environ["YT_REFRESH_TOKEN"],
         "grant_type": "refresh_token"}, timeout=30)
     if not resp.ok:

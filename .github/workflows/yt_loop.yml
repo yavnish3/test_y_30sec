@@ -38,6 +38,7 @@ jobs:
       - name: Wait for the next slot and upload once
         working-directory: yt
         env:
+          YT_CLIENT_JSON: ${{ secrets.YT_CLIENT_JSON }}
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
