@@ -4,8 +4,8 @@ slot, uploads one Short with upload_next.py, saves yt_posted.csv and ends; the w
 then starts a fresh run of itself. A run that cannot reach a slot within ~5.5 h just
 ends and the next run keeps waiting.
 
-Slots (UTC): 03:30 07:30 11:30 15:30  =  IST 09:00 13:00 17:00 21:00  (4 Shorts a day;
-YouTube's free API quota allows about 6 uploads a day).
+Schedule: one Short every 5 hours, counted from the last upload in yt_posted.csv
+(~4.8 a day; YouTube's free API quota allows about 6 uploads a day).
 UPLOAD_NOW=yes uploads right away (hand-started runs only).
 """
 
@@ -17,17 +17,22 @@ from datetime import datetime, timedelta, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-SLOTS = [(3, 30), (7, 30), (11, 30), (15, 30)]
+EVERY = timedelta(hours=5)
 BUDGET = 5 * 3600 + 30 * 60
 START = time.time()
 
 
+def last_upload():
+    import csv
+    with open(os.path.join(HERE, "yt_posted.csv"), encoding="utf-8") as f:
+        times = [datetime.fromisoformat(r["posted_at"]) for r in csv.DictReader(f) if r.get("posted_at")]
+    times = [t if t.tzinfo else t.replace(tzinfo=timezone.utc) for t in times]
+    return max(times) if times else None
+
+
 def next_slot(now):
-    slots = []
-    for day in (0, 1):
-        d = (now + timedelta(days=day)).replace(second=0, microsecond=0)
-        slots += [d.replace(hour=h, minute=m) for h, m in SLOTS]
-    return min(s for s in slots if s > now)
+    last = last_upload()
+    return max(last + EVERY, now) if last else now
 
 
 def git(*args, check=True):
@@ -61,6 +66,7 @@ def main():
     if os.environ.get("UPLOAD_NOW") == "yes":
         upload_once()
         return
+    git("pull", "--rebase", check=False)  # latest yt_posted.csv (a hand-started upload may have run)
     now = datetime.now(timezone.utc)
     slot = next_slot(now)
     left = BUDGET - (time.time() - START)

@@ -1,7 +1,7 @@
 # The 30 sec developers: YouTube Shorts autopost
 
-Uploads the SQL reel series (SQL001, SQL002, …) to YouTube as Shorts, **4 a day**
-(IST 09:00, 13:00, 17:00, 21:00), fully on GitHub Actions.
+Uploads the SQL reel series (SQL001, SQL002, …) to YouTube as Shorts, **one every 5 hours**
+(counted from the last upload), fully on GitHub Actions.
 
 - Videos: Cloudinary `insta/reel/SQLxxx.mp4`, ONE copy shared with the Instagram loop (test_in_up).
   A video is deleted only once it is posted on both Instagram and YouTube (each loop checks the other's posted CSV).
