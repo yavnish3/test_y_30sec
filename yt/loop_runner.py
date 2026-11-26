@@ -4,8 +4,8 @@ slot, uploads one Short with upload_next.py, saves yt_posted.csv and ends; the w
 then starts a fresh run of itself. A run that cannot reach a slot within ~5.5 h just
 ends and the next run keeps waiting.
 
-Schedule: one Short every 5 hours, counted from the last upload in yt_posted.csv
-(~4.8 a day; YouTube's free API quota allows about 6 uploads a day).
+Schedule: one Short every 4 hours, counted from the last upload in yt_posted.csv
+(6 a day; YouTube's free API quota allows about 6 uploads a day).
 UPLOAD_NOW=yes uploads right away (hand-started runs only).
 """
 
@@ -17,7 +17,7 @@ from datetime import datetime, timedelta, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-EVERY = timedelta(hours=5)
+EVERY = timedelta(hours=4)
 BUDGET = 5 * 3600 + 30 * 60
 START = time.time()
 
