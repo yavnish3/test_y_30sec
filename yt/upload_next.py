@@ -15,7 +15,6 @@ Exit code 0 = uploaded, 3 = nothing ready, other = error.
 """
 
 import csv
-import hashlib
 import io
 import json
 import os
@@ -81,6 +80,16 @@ def metadata(pid, item):
         "status": {"privacyStatus": os.environ.get("YT_PRIVACY", "public"),
                    "selfDeclaredMadeForKids": False, "embeddable": True},
     }
+
+
+def client():
+    """Client id/secret from YT_CLIENT_JSON (the whole downloaded credentials JSON) or YT_CLIENT_ID/_SECRET."""
+    raw = os.environ.get("YT_CLIENT_JSON", "").strip()
+    if raw:
+        data = json.loads(raw)
+        data = data.get("installed") or data.get("web") or data
+        return data["client_id"], data["client_secret"]
+    return os.environ["YT_CLIENT_ID"], os.environ["YT_CLIENT_SECRET"]
 
 
 def access_token():
