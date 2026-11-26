@@ -58,8 +58,9 @@ def upload_once():
     git("pull", "--rebase", check=False)
     code = subprocess.run([sys.executable, "-u", "upload_next.py"], cwd=HERE).returncode
     save()
-    if code not in (0, 3):
-        print(f"upload_next.py failed with exit code {code}")
+    if code != 0:  # failed or nothing ready: wait before the next run, never restart in a tight loop
+        print(f"upload_next.py exit code {code}: waiting 1 h before the next try", flush=True)
+        time.sleep(3600)
 
 
 def main():
