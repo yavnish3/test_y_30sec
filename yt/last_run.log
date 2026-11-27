@@ -1,34 +1,36 @@
-run at 2026-11-27 08:35 UTC
+run at 2026-11-27 12:35 UTC
 missing secrets: none | AI keys set: ['GROQ_API_KEY', 'GEMINI_API_KEY', 'GEMINI_API_KEY_2']
 exit code: 0
 
-Next: SQL005
+Next: SQL006
 {
  "snippet": {
-  "title": "Primary Key in SQL: Har Row Ka Aadhaar Card? 🪪 #shorts",
+  "title": "CREATE TABLE in SQL: 10 sec me pehli table kaise banaye? 🚀☕ #shorts",
   "tags": [
-   "primary key sql",
-   "primary key in sql hindi",
-   "sql primary key tutorial",
-   "sql interview primary key",
-   "unique not null sql",
-   "sql table primary key",
-   "sql create table example",
+   "create table sql",
+   "sql create table tutorial",
+   "sql table creation hindi",
+   "sql interview table question",
    "sql basics hindi",
+   "sql tutorial in hindi",
    "sql for beginners",
-   "sql interview questions",
-   "how to set primary key",
-   "sql primary key mistake",
-   "sql primary key vs unique",
-   "sql primary key definition",
-   "sql hindi tutorial",
-   "sql short video",
-   "primary key id vs name",
-   "sql primary key example",
-   "sql primary key usage",
+   "sql interview prep",
    "sql data types",
+   "sql primary key",
+   "sql syntax hindi",
+   "sql table design",
+   "sql short tutorial",
+   "learn sql in 30 sec",
+   "sql tips and tricks",
+   "sql column naming",
+   "sql snake case",
+   "sql semicolon usage",
+   "sql common mistakes",
+   "sql beginners guide",
+   "sql interview prep india",
+   "sql coding interview",
    "sql",
-   "learnsql"
+   "ddl"
   ],
   "categoryId": "27",
   "defaultLanguage": "hi",
@@ -40,8 +42,8 @@ Next: SQL005
   "embeddable": true
  }
 }
-Downloaded 17.9 MB, uploading to YouTube…
+Downloaded 16.4 MB, uploading to YouTube…
 Thumbnail: set
-Uploaded SQL005: https://youtube.com/shorts/nMRNUjRhWo8  (privacy: public, upload: uploaded)
-Deleted from Cloudinary (posted on both): ['insta/reel/SQL005']
-Deleted from Cloudinary (posted on both): ['insta/thumbnails/SQL005']
+Uploaded SQL006: https://youtube.com/shorts/3gMnUCCOpW0  (privacy: public, upload: uploaded)
+Deleted from Cloudinary (posted on both): ['insta/reel/SQL006']
+Deleted from Cloudinary (posted on both): ['insta/thumbnails/SQL006']
