@@ -1,35 +1,34 @@
-run at 2026-11-27 04:35 UTC
+run at 2026-11-27 08:35 UTC
 missing secrets: none | AI keys set: ['GROQ_API_KEY', 'GEMINI_API_KEY', 'GEMINI_API_KEY_2']
 exit code: 0
 
-Next: SQL004
+Next: SQL005
 {
  "snippet": {
-  "title": "Data Types in SQL: Paise ko FLOAT mein rakha? Bank waale ro denge 😭 #shorts",
+  "title": "Primary Key in SQL: Har Row Ka Aadhaar Card? 🪪 #shorts",
   "tags": [
-   "sql tutorial in hindi",
-   "data types sql",
-   "sql data types hindi",
-   "sql interview questions",
-   "sql int datatype",
-   "sql varchar datatype",
-   "sql decimal vs float",
-   "sql date datatype",
-   "sql boolean datatype",
-   "sql basics for beginners",
-   "sql short tutorial",
-   "learn sql in 30 seconds",
-   "sql for freshers",
-   "sql interview prep",
-   "sql table creation",
+   "primary key sql",
+   "primary key in sql hindi",
+   "sql primary key tutorial",
+   "sql interview primary key",
+   "unique not null sql",
+   "sql table primary key",
    "sql create table example",
-   "sql datatype tutorial",
-   "sql monetary values",
-   "sql float mistake",
+   "sql basics hindi",
+   "sql for beginners",
+   "sql interview questions",
+   "how to set primary key",
+   "sql primary key mistake",
+   "sql primary key vs unique",
+   "sql primary key definition",
    "sql hindi tutorial",
-   "sql coding tips",
    "sql short video",
-   "sql"
+   "primary key id vs name",
+   "sql primary key example",
+   "sql primary key usage",
+   "sql data types",
+   "sql",
+   "learnsql"
   ],
   "categoryId": "27",
   "defaultLanguage": "hi",
@@ -41,8 +40,8 @@ Next: SQL004
   "embeddable": true
  }
 }
-Downloaded 19.5 MB, uploading to YouTube…
+Downloaded 17.9 MB, uploading to YouTube…
 Thumbnail: set
-Uploaded SQL004: https://youtube.com/shorts/Gz3yBgtFWjw  (privacy: public, upload: uploaded)
-Deleted from Cloudinary (posted on both): ['insta/reel/SQL004']
-Deleted from Cloudinary (posted on both): ['insta/thumbnails/SQL004']
+Uploaded SQL005: https://youtube.com/shorts/nMRNUjRhWo8  (privacy: public, upload: uploaded)
+Deleted from Cloudinary (posted on both): ['insta/reel/SQL005']
+Deleted from Cloudinary (posted on both): ['insta/thumbnails/SQL005']
