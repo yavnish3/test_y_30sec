@@ -1,34 +1,34 @@
-run at 2026-11-27 00:35 UTC
+run at 2026-11-27 04:35 UTC
 missing secrets: none | AI keys set: ['GROQ_API_KEY', 'GEMINI_API_KEY', 'GEMINI_API_KEY_2']
 exit code: 0
 
-Next: SQL003
+Next: SQL004
 {
  "snippet": {
-  "title": "SQL Interview Ka Secret: Table, Row aur Column Ka Real Meaning? 📊🤔 #shorts",
+  "title": "Data Types in SQL: Paise ko FLOAT mein rakha? Bank waale ro denge 😭 #shorts",
   "tags": [
-   "table row column sql",
-   "sql table definition hindi",
-   "sql row vs column",
-   "sql interview basics",
-   "sql tutorial hindi",
-   "sql for beginners",
-   "sql select * example",
-   "sql interview question",
-   "sql data grid",
-   "sql basics in hindi",
-   "sql tutorial short",
-   "sql hindi shorts",
-   "learn sql quickly",
-   "sql concepts explained",
-   "sql grid explanation",
-   "sql table row column",
+   "sql tutorial in hindi",
+   "data types sql",
+   "sql data types hindi",
+   "sql interview questions",
+   "sql int datatype",
+   "sql varchar datatype",
+   "sql decimal vs float",
+   "sql date datatype",
+   "sql boolean datatype",
+   "sql basics for beginners",
+   "sql short tutorial",
+   "learn sql in 30 seconds",
+   "sql for freshers",
    "sql interview prep",
-   "sql for data analyst",
-   "sql for backend jobs",
-   "sql cheat sheet hindi",
-   "sql basics video",
-   "sql training india",
+   "sql table creation",
+   "sql create table example",
+   "sql datatype tutorial",
+   "sql monetary values",
+   "sql float mistake",
+   "sql hindi tutorial",
+   "sql coding tips",
+   "sql short video",
    "sql"
   ],
   "categoryId": "27",
@@ -41,8 +41,8 @@ Next: SQL003
   "embeddable": true
  }
 }
-Downloaded 19.6 MB, uploading to YouTube…
+Downloaded 19.5 MB, uploading to YouTube…
 Thumbnail: set
-Uploaded SQL003: https://youtube.com/shorts/8FrJP8tbOgM  (privacy: public, upload: uploaded)
-Deleted from Cloudinary (posted on both): ['insta/reel/SQL003']
-Deleted from Cloudinary (posted on both): ['insta/thumbnails/SQL003']
+Uploaded SQL004: https://youtube.com/shorts/Gz3yBgtFWjw  (privacy: public, upload: uploaded)
+Deleted from Cloudinary (posted on both): ['insta/reel/SQL004']
+Deleted from Cloudinary (posted on both): ['insta/thumbnails/SQL004']
