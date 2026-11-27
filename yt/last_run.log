@@ -1,34 +1,36 @@
-run at 2026-11-27 16:35 UTC
+run at 2026-11-27 20:35 UTC
 missing secrets: none | AI keys set: ['GROQ_API_KEY', 'GEMINI_API_KEY', 'GEMINI_API_KEY_2']
 exit code: 0
 
-Next: SQL007
+Next: SQL008
 {
  "snippet": {
-  "title": "INSERT INTO SQL: Khaali Table Udaas Hai? 🍽️ Data Khilaao Ab! #shorts",
+  "title": "SELECT * FROM in SQL: Sab kuch dikha do? 😲💻 #shorts",
   "tags": [
-   "insert into sql in hindi",
-   "sql insert query",
-   "how to insert data in sql",
-   "sql for beginners hindi",
-   "sql interview questions",
-   "insert multiple rows sql",
-   "sql single quotes rule",
-   "the 30 sec dev",
-   "sql coding hindi",
-   "databse insertion technique",
-   "sql syntax error fix",
-   "hindu style sql tutorial",
-   "freshers sql questions",
-   "sql data types quotes",
-   "batch insert in sql",
-   "sql row values syntax",
-   "common sql mistakes",
-   "learn sql 30 seconds",
+   "select star sql",
+   "select * from sql",
+   "sql select statement",
    "sql basics hindi",
-   "database management hindi",
-   "sql",
-   "dml"
+   "sql interview question",
+   "sql tutorial hindi",
+   "sql for beginners",
+   "sql select all columns",
+   "select all from table",
+   "sql star operator",
+   "sql best practices",
+   "avoid select star",
+   "production sql query",
+   "sql performance tip",
+   "sql query examples",
+   "sql training india",
+   "sql short tutorial",
+   "sql short video",
+   "sql hindi short",
+   "sql interview prep",
+   "data analyst sql",
+   "backend job sql",
+   "sql cheat sheet",
+   "select from"
   ],
   "categoryId": "27",
   "defaultLanguage": "hi",
@@ -40,8 +42,8 @@ Next: SQL007
   "embeddable": true
  }
 }
-Downloaded 17.3 MB, uploading to YouTube…
+Downloaded 16.8 MB, uploading to YouTube…
 Thumbnail: set
-Uploaded SQL007: https://youtube.com/shorts/mAbVjlD9kA0  (privacy: public, upload: uploaded)
-Deleted from Cloudinary (posted on both): ['insta/reel/SQL007']
-Deleted from Cloudinary (posted on both): ['insta/thumbnails/SQL007']
+Uploaded SQL008: https://youtube.com/shorts/4SE48ahq4KY  (privacy: public, upload: uploaded)
+Deleted from Cloudinary (posted on both): ['insta/reel/SQL008']
+Deleted from Cloudinary (posted on both): ['insta/thumbnails/SQL008']
