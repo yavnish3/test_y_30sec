@@ -1,34 +1,38 @@
-run at 2026-11-28 08:35 UTC
+run at 2026-11-28 12:35 UTC
 missing secrets: none | AI keys set: ['GROQ_API_KEY', 'GEMINI_API_KEY', 'GEMINI_API_KEY_2']
 exit code: 0
 
-Next: SQL011
+Next: SQL012
 {
  "snippet": {
-  "title": "DISTINCT in SQL: Delhi 3 baar dikh raha? Ek hi kaafi! 🤔🚀 #shorts",
+  "title": "SQL WHERE Clause: Poori table nahi, sirf Delhi waale chahiye? 🎯 #shorts",
   "tags": [
-   "distinct sql",
-   "sql distinct",
-   "sql duplicate removal",
-   "distinct in sql hindi",
-   "sql interview distinct",
-   "sql select distinct example",
-   "sql distinct count",
-   "sql distinct multiple columns",
-   "sql tutorial hindi",
-   "sql basics hindi",
+   "where clause in sql",
+   "sql where clause hindi",
+   "sql where condition",
+   "sql filtering rows",
+   "sql tutorial in hindi",
    "sql interview questions",
    "sql for beginners",
-   "learn sql in hindi",
-   "sql short tutorial",
+   "select where sql",
    "sql query examples",
-   "sql select statement",
-   "sql data cleaning",
-   "sql tips for interview",
-   "sql cheat sheet",
-   "sql practice problems",
-   "sql select distinct city",
-   "sql short video"
+   "data analyst skills",
+   "backend development",
+   "sql basics",
+   "sql practice",
+   "sql commands",
+   "learn sql fast",
+   "sql in 30 seconds",
+   "sql course",
+   "sql syntax",
+   "database tutorial",
+   "sql interview prep",
+   "sql operators",
+   "sql text filter",
+   "sql numbers",
+   "sql error fix",
+   "sql equals sign",
+   "mysql tutorial"
   ],
   "categoryId": "27",
   "defaultLanguage": "hi",
@@ -40,8 +44,8 @@ Next: SQL011
   "embeddable": true
  }
 }
-Downloaded 15.9 MB, uploading to YouTube…
+Downloaded 17.9 MB, uploading to YouTube…
 Thumbnail: set
-Uploaded SQL011: https://youtube.com/shorts/DaQRk8Z2cic  (privacy: public, upload: uploaded)
-Deleted from Cloudinary (posted on both): ['insta/reel/SQL011']
-Deleted from Cloudinary (posted on both): ['insta/thumbnails/SQL011']
+Uploaded SQL012: https://youtube.com/shorts/lSaECbistVg  (privacy: public, upload: uploaded)
+Deleted from Cloudinary (posted on both): ['insta/reel/SQL012']
+Deleted from Cloudinary (posted on both): ['insta/thumbnails/SQL012']
