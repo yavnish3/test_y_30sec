@@ -1,40 +1,34 @@
-run at 2026-11-28 04:35 UTC
+run at 2026-11-28 08:35 UTC
 missing secrets: none | AI keys set: ['GROQ_API_KEY', 'GEMINI_API_KEY', 'GEMINI_API_KEY_2']
 exit code: 0
 
-Next: SQL010
+Next: SQL011
 {
  "snippet": {
-  "title": "Alias (AS) in SQL ka magic? Column rename kare bina table badle! 🤔🏷️ #shorts",
+  "title": "DISTINCT in SQL: Delhi 3 baar dikh raha? Ek hi kaafi! 🤔🚀 #shorts",
   "tags": [
-   "sql alias",
-   "alias as sql",
-   "sql column rename",
-   "sql as keyword",
-   "sql interview questions",
+   "distinct sql",
+   "sql distinct",
+   "sql duplicate removal",
+   "distinct in sql hindi",
+   "sql interview distinct",
+   "sql select distinct example",
+   "sql distinct count",
+   "sql distinct multiple columns",
    "sql tutorial hindi",
-   "sql basics",
-   "sql select alias",
-   "sql select statement",
+   "sql basics hindi",
+   "sql interview questions",
    "sql for beginners",
-   "sql in hindi",
-   "sql training",
-   "sql cheat sheet",
+   "learn sql in hindi",
    "sql short tutorial",
-   "sql tips",
-   "sql interview prep",
-   "sql data analyst",
-   "sql backend job",
    "sql query examples",
-   "sql select examples",
-   "sql as in where clause",
-   "sql as usage",
-   "sql select as",
-   "sql alias mistake",
-   "sql alias error",
-   "sql alias tutorial",
-   "sql",
-   "as"
+   "sql select statement",
+   "sql data cleaning",
+   "sql tips for interview",
+   "sql cheat sheet",
+   "sql practice problems",
+   "sql select distinct city",
+   "sql short video"
   ],
   "categoryId": "27",
   "defaultLanguage": "hi",
@@ -46,8 +40,8 @@ Next: SQL010
   "embeddable": true
  }
 }
-Downloaded 16.7 MB, uploading to YouTube…
+Downloaded 15.9 MB, uploading to YouTube…
 Thumbnail: set
-Uploaded SQL010: https://youtube.com/shorts/TlPHIGb0DEY  (privacy: public, upload: uploaded)
-Deleted from Cloudinary (posted on both): ['insta/reel/SQL010']
-Deleted from Cloudinary (posted on both): ['insta/thumbnails/SQL010']
+Uploaded SQL011: https://youtube.com/shorts/DaQRk8Z2cic  (privacy: public, upload: uploaded)
+Deleted from Cloudinary (posted on both): ['insta/reel/SQL011']
+Deleted from Cloudinary (posted on both): ['insta/thumbnails/SQL011']
