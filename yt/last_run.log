@@ -1,33 +1,40 @@
-run at 2026-11-28 00:35 UTC
+run at 2026-11-28 04:35 UTC
 missing secrets: none | AI keys set: ['GROQ_API_KEY', 'GEMINI_API_KEY', 'GEMINI_API_KEY_2']
 exit code: 0
 
-Next: SQL009
+Next: SQL010
 {
  "snippet": {
-  "title": "Specific Columns Select karna in SQL! Poori table kyu query karni? 🧐 Part 9 #shorts",
+  "title": "Alias (AS) in SQL ka magic? Column rename kare bina table badle! 🤔🏷️ #shorts",
   "tags": [
-   "sql in hindi",
-   "sql select statement",
-   "sql tutorial for beginners",
+   "sql alias",
+   "alias as sql",
+   "sql column rename",
+   "sql as keyword",
    "sql interview questions",
-   "sql query in hindi",
-   "select specific columns sql",
-   "sql basics for beginners",
-   "sql for data analysis",
-   "sql course in hindi",
-   "sql commands",
-   "sql queries examples",
-   "sql interview preparation",
-   "sql select columns",
-   "sql data analyst interview",
-   "sql backend interview",
-   "learn sql fast",
-   "sql tutorial",
-   "sql practical questions",
-   "sql syntax basics",
-   "database tutorial in hindi",
-   "sql mistakes to avoid"
+   "sql tutorial hindi",
+   "sql basics",
+   "sql select alias",
+   "sql select statement",
+   "sql for beginners",
+   "sql in hindi",
+   "sql training",
+   "sql cheat sheet",
+   "sql short tutorial",
+   "sql tips",
+   "sql interview prep",
+   "sql data analyst",
+   "sql backend job",
+   "sql query examples",
+   "sql select examples",
+   "sql as in where clause",
+   "sql as usage",
+   "sql select as",
+   "sql alias mistake",
+   "sql alias error",
+   "sql alias tutorial",
+   "sql",
+   "as"
   ],
   "categoryId": "27",
   "defaultLanguage": "hi",
@@ -39,8 +46,8 @@ Next: SQL009
   "embeddable": true
  }
 }
-Downloaded 16.3 MB, uploading to YouTube…
+Downloaded 16.7 MB, uploading to YouTube…
 Thumbnail: set
-Uploaded SQL009: https://youtube.com/shorts/Ij0_yTC4dG8  (privacy: public, upload: uploaded)
-Deleted from Cloudinary (posted on both): ['insta/reel/SQL009']
-Deleted from Cloudinary (posted on both): ['insta/thumbnails/SQL009']
+Uploaded SQL010: https://youtube.com/shorts/TlPHIGb0DEY  (privacy: public, upload: uploaded)
+Deleted from Cloudinary (posted on both): ['insta/reel/SQL010']
+Deleted from Cloudinary (posted on both): ['insta/thumbnails/SQL010']
