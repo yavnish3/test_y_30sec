@@ -1,38 +1,35 @@
-run at 2026-11-28 12:35 UTC
+run at 2026-11-28 16:35 UTC
 missing secrets: none | AI keys set: ['GROQ_API_KEY', 'GEMINI_API_KEY', 'GEMINI_API_KEY_2']
 exit code: 0
 
-Next: SQL012
+Next: SQL013
 {
  "snippet": {
-  "title": "SQL WHERE Clause: Poori table nahi, sirf Delhi waale chahiye? 🎯 #shorts",
+  "title": "SQL Comparison Operators ka secret: 6 symbols jo data judge karte hain ⚖️ #shorts",
   "tags": [
-   "where clause in sql",
-   "sql where clause hindi",
-   "sql where condition",
-   "sql filtering rows",
-   "sql tutorial in hindi",
+   "sql comparison operators",
+   "comparison operators sql",
+   "sql tutorial hindi",
    "sql interview questions",
+   "sql where clause",
+   "sql filter data",
+   "sql salary query",
+   "sql date comparison",
+   "sql string comparison",
+   "sql basics in hindi",
+   "learn sql in hindi",
+   "sql short tutorial",
    "sql for beginners",
-   "select where sql",
+   "sql tips and tricks",
+   "sql interview preparation",
+   "sql coding interview",
+   "sql hindi short",
    "sql query examples",
-   "data analyst skills",
-   "backend development",
-   "sql basics",
-   "sql practice",
-   "sql commands",
-   "learn sql fast",
-   "sql in 30 seconds",
-   "sql course",
-   "sql syntax",
-   "database tutorial",
-   "sql interview prep",
-   "sql operators",
-   "sql text filter",
-   "sql numbers",
-   "sql error fix",
-   "sql equals sign",
-   "mysql tutorial"
+   "sql where clause examples",
+   "sql operators tutorial",
+   "sql comparison symbols",
+   "sql",
+   "learnsql"
   ],
   "categoryId": "27",
   "defaultLanguage": "hi",
@@ -44,8 +41,8 @@ Next: SQL012
   "embeddable": true
  }
 }
-Downloaded 17.9 MB, uploading to YouTube…
+Downloaded 17.2 MB, uploading to YouTube…
 Thumbnail: set
-Uploaded SQL012: https://youtube.com/shorts/lSaECbistVg  (privacy: public, upload: uploaded)
-Deleted from Cloudinary (posted on both): ['insta/reel/SQL012']
-Deleted from Cloudinary (posted on both): ['insta/thumbnails/SQL012']
+Uploaded SQL013: https://youtube.com/shorts/HAK-h43dx8k  (privacy: public, upload: uploaded)
+Deleted from Cloudinary (posted on both): ['insta/reel/SQL013']
+Deleted from Cloudinary (posted on both): ['insta/thumbnails/SQL013']
